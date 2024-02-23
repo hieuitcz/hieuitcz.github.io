@@ -378,44 +378,6 @@ const pagination = (() => {
     };
 })();
 
-const session = (() => {
-
-    let body = document.querySelector('body');
-
-    const login = async () => {
-        await request('POST', '/api/session')
-            .body({
-                email: body.getAttribute('data-email'),
-                password: body.getAttribute('data-password')
-            })
-            .then((res) => {
-                if (res.code == 200) {
-                    localStorage.removeItem('token');
-                    localStorage.setItem('token', res.data.token);
-                    comment.ucapan();
-                }
-            })
-            
-    };
-
-    const check = async () => {
-        const token = localStorage.getItem('token');
-
-        if (token) {
-            const jwt = JSON.parse(atob(token.split('.')[1]));
-
-            if (jwt.exp < ((new Date()).getTime() / 1000) || !jwt.iss.includes((new URL(window.location.href)).host)) {
-                await login();
-            } else {
-                await comment.ucapan();
-            }
-        } else {
-            await login();
-        }
-    };
-
-    return { check };
-})();
 
 const like = (() => {
 
