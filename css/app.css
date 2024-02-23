@@ -13,10 +13,6 @@ body {
 body::-webkit-scrollbar {
     display: none !important;
 }
-.bg-dark {
-    --bs-bg-opacity: 1;
-    background-color: red!important;
-}
 
 
 .fixed-bottom {
