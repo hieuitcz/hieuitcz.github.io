@@ -1,0 +1,257 @@
+#EXTM3U url-tvg="http://lichphatsong.xyz/schedule/epg.xml"
+#-------------------FPT Play-------------------#
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/nfkmvAY.png",VTV1 (HD 4Mbps)
+udp://@225.1.4.1:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/BVwi3K3.png",VTV2 (HD 4Mbps)
+udp://@225.1.4.2:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/7rLCvgS.png",VTV3 (HD 4Mbps)
+udp://@225.1.4.3:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/9zVTtsA.png",VTV4 (HD 4Mbps)
+udp://@225.1.4.4:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/7qPKNFU.png",VTV5 (HD 8Mbps)
+udp://@225.1.4.5:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/HCpqatZ.png",VTV Cần Thơ (HD 4Mbps)
+udp://@225.1.4.6:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/HCpqatZ.png",VTV Cần Thơ (HD 4Mbps)
+udp://@225.1.4.108:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/AgamSNe.png",VTV7 (HD 4Mbps)
+udp://@225.1.4.201:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/lpcltL9.png",VTV8 (HD 4Mbps)
+udp://@225.1.4.7:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/Ex1VkGQ.png",VTV9 (HD 4Mbps)
+udp://@225.1.4.8:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/mIUWkDx.png",VTV5 Tây Nam Bộ (HD 4Mbps)
+udp://@225.1.4.184:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/R8c2swd.png",VTV5 Tây Nguyên (HD 4Mbps)
+udp://@225.1.4.179:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc1hd" tvg-logo="https://imgur.com/Pc2ZuX0.png",VTC1 HD
+udp://@225.1.2.254:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc2hd" tvg-logo="https://imgur.com/1FccD2h.png",VTC2
+udp://@225.1.2.202:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/hS4bgHe.png",VTC3 HD (HD 4Mbps)
+udp://@225.1.4.42:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/5cwYPTt.png",VTC4 HD (HD 4Mbps)
+udp://@225.1.4.43:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc5hd" tvg-logo="https://imgur.com/IDkKiEa.png",VTC5
+udp://@225.1.2.199:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/LPdjM0z.png",VTC6 HD (HD 4Mbps)
+udp://@225.1.4.45:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc7hd" tvg-logo="https://imgur.com/sDWf2Q1.png",VTC7
+udp://@225.1.2.197:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc8hd" tvg-logo="https://imgur.com/cQ8Ygbk.png",VTC8
+udp://@225.1.2.196:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/cnAht7i.png",VTC9 HD (HD 4Mbps)
+udp://@225.1.4.48:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/PaVbyxg.png",VTC10 HD (HD 4Mbps)
+udp://@225.1.4.49:30120
+#EXTINF:-1 group-title="VTC" tvg-id="vtc11hd" tvg-logo="https://imgur.com/RoTy0Ly.png",VTC11
+udp://@225.1.2.193:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/phXvB0t.png",VTC14 HD (HD 4Mbps)
+udp://@225.1.4.53:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/rltq2Dy.png",VTC16 HD (HD 4Mbps)
+udp://@225.1.4.54:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/f3KlwDX.png",HTV2 Vie Channel (HD 4Mbps)
+udp://@225.1.4.56:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/RSlvzAs.png",HTV7 HD (HD 4Mbps)
+udp://@225.1.4.59:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/wdS7Cr9.png",HTV9 HD (HD 4Mbps)
+udp://@225.1.4.11:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/z7NOxJ3.png",HTV THỂ THAO (HD 4Mbps)
+udp://@225.1.4.60:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/XxIO0E0.png",HTVC Du Lịch và Cuộc Sống (HD 4Mbps)
+udp://@225.1.4.67:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/ZHVkEIC.png",HTVC Ca Nhạc (HD 4Mbps)
+udp://@225.1.4.223:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/3WanRsM.png",HTVC Gia Đình (HD 4Mbps)
+udp://@225.1.4.64:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/W16kIQP.png",HTVC Phim (HD 4Mbps)
+udp://@225.1.4.63:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/MyyovVe.png",HTVC Phụ Nữ (HD 4Mbps)
+udp://@225.1.4.66:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/xmISDWo.png",HTVC Thuần Việt (HD 4Mbps)
+udp://@225.1.4.62:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/SQ9cLJj.png",HTVC+ (HD 4Mbps)
+udp://@225.1.4.91:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/pSIvTkZ.png",SCTV6 (HD 4Mbps)
+udp://@225.1.4.211:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/eGkFbAh.png",ANTV HD (HD 4Mbps)
+udp://@225.1.4.221:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/Ud78FHF.png",Nhân Dân TV (HD 4Mbps)
+udp://@225.1.4.98:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/YtZGuSy.png",Quốc Hội HD (HD 4Mbps)
+udp://@225.1.4.148:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/UIGZw0y.png",QPVN (HD 4Mbps)
+udp://@225.1.4.170:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/GmefCpv.png",VNEWS (HD 4Mbps)
+udp://@225.1.4.219:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/05t6W7v.png",BGTV HD _ TH Bắc Giang
+udp://@225.1.4.173:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/mwCTDMj.png",H1 HD _ TH Hà Nội (HD 4Mbps)
+udp://@225.1.4.203:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/UfOw13y.png",THĐT1 HD _ TH Đồng Tháp (HD 4Mbps)
+udp://@225.1.4.125:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/WXebESa.png",THĐT2 Miền Tây (HD 4Mbps)
+udp://@225.1.4.177:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/gvPtTR2.png",THVL1 HD _ TH Vĩnh Long (HD 4Mbps)
+udp://@225.1.4.202:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/wYadDFn.png",THVL2 HD _ TH Vĩnh Long (HD 4Mbps)
+udp://@225.1.4.87:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/B8S0dyG.png",THVL3 HD _ TH Vĩnh Long (HD 4Mbps)
+udp://@225.1.4.176:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/xYalJzh.png",THVL4 HD _ TH Vĩnh Long (HD 4Mbps)
+udp://@225.1.4.217:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/dHOm6Ll.png",THTV HD _ TH Trà Vinh (HD 4Mbps)
+udp://@225.1.4.164:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play" tvg-logo="https://i.imgur.com/a3joZFM.png",HGTV HD _ TH Hậu Giang (HD 4Mbps)
+udp://@225.1.4.133:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",HTV1
+udp://@225.1.4.55:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",HTV3
+udp://@225.1.4.57:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",HTV Keys
+udp://@225.1.4.58:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",YouTV
+udp://@225.1.4.222:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",QTV3 HD _ TH Quảng Ninh
+udp://@225.1.4.86:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",BPTV2 HD _ TH Bình Phước
+udp://@225.1.4.80:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",BTV2 HD _ TH Bình Dương
+udp://@225.1.4.81:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",ĐNRTV2 HD _ TH Đồng Nai
+udp://@225.1.4.85:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Arirang
+udp://@225.1.4.74:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",CNBC
+udp://@225.1.4.77:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",VOV TV
+udp://@225.1.4.220:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",BTV9 An Viên HD
+udp://@225.1.4.99:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bạc Liêu HD
+udp://@225.1.4.109:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bắc Ninh HD
+udp://@225.1.4.110:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bến Tre HD
+udp://@225.1.4.111:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bình Định HD
+udp://@225.1.4.112:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bình Phước 1 HD
+udp://@225.1.4.113:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bình Thuận HD
+udp://@225.1.4.114:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bình Dương 1 HD
+udp://@225.1.4.115:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Cà Mau HD
+udp://@225.1.4.117:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Cần Thơ HD
+udp://@225.1.4.118:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Cao Bằng HD
+udp://@225.1.4.119:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Đà Nẵng 1 HD
+udp://@225.1.4.120:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Đà Nẵng 2 HD
+udp://@225.1.4.121:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Đắk Lắk HD
+udp://@225.1.4.122:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Điện Biên HD
+udp://@225.1.4.123:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Đồng Nai 1 HD
+udp://@225.1.4.124:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Gia Lai HD
+udp://@225.1.4.126:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hà Giang HD
+udp://@225.1.4.127:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hà Nam
+udp://@225.1.4.128:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hà Tĩnh HD
+udp://@225.1.4.129:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hải Dương HD
+udp://@225.1.4.130:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hải Phòng HD
+udp://@225.1.4.131:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hà Nội 2 HD
+udp://@225.1.4.132:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hòa Bình HD
+udp://@225.1.4.134:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Thừa Thiên Huế
+udp://@225.1.4.135:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hưng Yên
+udp://@225.1.4.136:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Khánh Hòa HD
+udp://@225.1.4.137:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Kiên Giang HD
+udp://@225.1.4.138:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Kon Tum HD
+udp://@225.1.4.139:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Lai Châu HD
+udp://@225.1.4.140:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Lâm Đồng HD
+udp://@225.1.4.141:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Lạng Sơn HD
+udp://@225.1.4.142:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Lào Cai HD
+udp://@225.1.4.143:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Long An
+udp://@225.1.4.144:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Nam Định
+udp://@225.1.4.145:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Nghệ An HD
+udp://@225.1.4.146:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Ninh Bình HD
+udp://@225.1.4.147:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Ninh Thuận HD
+udp://@225.1.4.149:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Phú Thọ HD
+udp://@225.1.4.150:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Phú Yên HD
+udp://@225.1.4.151:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Quảng Bình
+udp://@225.1.4.152:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Quảng Nam HD
+udp://@225.1.4.153:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Quảng Ngãi HD
+udp://@225.1.4.154:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",QTV1 HD _ TH Quảng Ninh
+udp://@225.1.4.155:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Quảng Trị HD
+udp://@225.1.4.156:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Sóc Trăng 1
+udp://@225.1.4.157:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Sơn La
+udp://@225.1.4.158:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Tây Ninh 11 HD
+udp://@225.1.4.159:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Thái Bình HD
+udp://@225.1.4.160:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Thái Nguyên 1 HD
+udp://@225.1.4.161:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Thanh Hóa
+udp://@225.1.4.162:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Tiền Giang HD
+udp://@225.1.4.163:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Tuyên Quang HD
+udp://@225.1.4.165:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Vĩnh Phúc HD
+udp://@225.1.4.166:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Yên Bái HD
+udp://@225.1.4.167:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",An Giang HD
+udp://@225.1.4.171:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Vũng Tàu HD
+udp://@225.1.4.172:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Bắc Kạn HD
+udp://@225.1.4.174:30120
+#EXTINF:0 tvg-id="" group-title="FPT Play",Hải Phòng + HD
+udp://@225.1.4.178:30120
+#-------------------K+-------------------#
+#EXTINF:0 tvg-id="" group-title="K+" tvg-logo="https://i.imgur.com/QPkuBRi.png",K+ Action (DRM)
+udp://@225.1.1.6:30120
+#EXTINF:0 tvg-id="" group-title="K+" tvg-logo="https://i.imgur.com/As4bwUs.png",K+ Cine (DRM)
+udp://@225.1.1.5:30120
+#EXTINF:0 tvg-id="" group-title="K+" tvg-logo="https://i.imgur.com/erWqYxh.png",K+ Kids (DRM)
+udp://@225.1.1.76:30120
+#EXTINF:0 tvg-id="" group-title="K+" tvg-logo="https://i.imgur.com/6yiAtRg.png",K+ Sport 1 (DRM)
+udp://@225.1.1.73:30120
+#EXTINF:0 tvg-id="" group-title="K+" tvg-logo="https://i.imgur.com/EFeyqYX.png",K+ Sport 2 (DRM)
+udp://@225.1.1.77:30120
