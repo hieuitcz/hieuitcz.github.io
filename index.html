@@ -411,69 +411,7 @@
         </section>
 
         <!-- Comment -->
-        <section class="bg-light my-0 pb-0 pt-3" id="comment">
-            <div class="container">
-                <div class="border rounded-4 shadow p-3 mb-2">
-                    <h2 class="font-esthetic text-center mt-2 mb-4" style="font-size: 2.5rem;">Ucapan &amp; Doa</h2>
-
-                    <div class="mb-3">
-                        <label for="form-name" class="form-label"><i class="fa-solid fa-person me-1"></i>Nama</label>
-                        <input type="text" class="form-control shadow-sm rounded-4" id="form-name" offline-disabled placeholder="Isikan Nama Anda">
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="form-presence" class="form-label"><i class="fa-solid fa-person-circle-question me-1"></i>Presensi</label>
-                        <select class="form-select shadow-sm rounded-4" id="form-presence" offline-disabled>
-                            <option value="0" selected>Konfirmasi Presensi</option>
-                            <option value="1">Datang</option>
-                            <option value="2">Berhalangan</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3">
-                        <div id="information" class="alert alert-info alert-dismissible fade show rounded-4" role="alert">
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close" onclick="util.close()"></button>
-
-                            <p style="font-size: 1.5rem;">Bestieee!!!</p>
-                            <p class="m-0">Cobain like seperti Instagram, dengan tap tap bagian komentarnya</p>
-                            <hr class="my-2">
-                            <p class="m-0">Sama bisa format text seperti Whatsapp lohh... cobainn jugaaa, makaciwww bestieee</p>
-                        </div>
-
-                        <label for="form-comment" class="form-label"><i class="fa-solid fa-comment me-1"></i>Ucapan &amp; Doa</label>
-                        <textarea class="form-control shadow-sm rounded-4" id="form-comment" rows="4" placeholder="Tulis Ucapan dan Doa" offline-disabled></textarea>
-                    </div>
-
-                    <div class="d-grid">
-                        <button class="btn btn-primary btn-sm rounded-4 shadow m-1" onclick="comment.send(this)" offline-disabled>
-                            <i class="fa-solid fa-paper-plane me-1"></i>Send
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Comments -->
-                <div class="py-3" id="comments" data-loading="false"></div>
-
-                <!-- Pagination -->
-                <nav class="d-flex d-none justify-content-center mt-1 mb-0" id="pagination">
-                    <ul class="pagination mb-0">
-                        <li class="page-item disabled" id="previous">
-                            <button class="page-link rounded-start-4" onclick="pagination.previous(this)" offline-disabled>
-                                <i class="fa-solid fa-circle-left me-1"></i>Prev
-                            </button>
-                        </li>
-                        <li class="page-item disabled">
-                            <span class="page-link text-light" id="page">1</span>
-                        </li>
-                        <li class="page-item" id="next">
-                            <button class="page-link rounded-end-4" onclick="pagination.next(this)" offline-disabled>
-                                Next<i class="fa-solid fa-circle-right ms-1"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+       
 
         <!-- Wave Separator -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="color-theme-black">
