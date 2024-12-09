@@ -1,6 +1,5 @@
 import { dto } from './dto.js';
 import { offline } from './offline.js';
-import { session } from './session.js';
 
 export const HTTP_GET = 'GET';
 export const HTTP_POST = 'POST';
