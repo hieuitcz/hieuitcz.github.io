@@ -1,10 +1,8 @@
-import { util } from './util.js';
 
 import { theme } from './theme.js';
 import { audio } from './audio.js';
 import { offline } from './offline.js';
 
-import { progress } from './progress.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
