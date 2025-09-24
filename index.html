@@ -1,156 +1,338 @@
-﻿
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
-        <title> Hiếu Lê </title>
-    </head>
-    <body>
-        <div class="app">
-            <div class="card mg-10">
-                <div class="card__title">
-                    <div class="card__title--img">
-                        <img src="./avatar.jpg" alt="" srcset="">
-                    </div>
-                    <div class="card__title--name">
-                        <h1> Hiếu Lê </h1>
-                        <div class="veri__check">
-                            <i class="fas fa-check"></i>
-                        </div>
-                    </div>
-                    <div class="card__title--description">
-                        <p> Profile Của Hiếu Lê </p>
-                    </div>
-                </div>
-                <div class="card__body mt-10">
-                    <div class="row">
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.facebook.com/lehieuit" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-facebook"></i>
-                                    </div>
-                                </a>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Lời Mời Đám Cưới</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="assets/css/wedding.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="heart-loading">💕</div>
+            <p>Đang tải thông tin đám cưới...</p>
+        </div>
+    </div>
+
+    <!-- Guest Greeting -->
+    <section class="guest-greeting py-3 text-center bg-light">
+        <div class="container">
+            <p id="guest-greeting" class="mb-0 text-muted">Kính gửi quý khách</p>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center justify-content-center" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/wedding-bg.jpg') center/cover;">
+        <div class="container text-center text-white">
+            <div data-aos="fade-up">
+                <p class="lead mb-2">Chúng tôi sẽ kết hôn</p>
+                <h1 class="display-4 mb-3">
+                    <span data-bride-name>Cô Dâu</span> 
+                    <i class="fas fa-heart mx-3 text-danger"></i> 
+                    <span data-groom-name>Chú Rể</span>
+                </h1>
+                <p class="lead mb-4" data-wedding-date>Ngày cưới sẽ được cập nhật</p>
+                <button class="btn btn-outline-light btn-lg" onclick="scrollToSection('event-details')">
+                    <i class="fas fa-calendar-alt me-2"></i>Xem Chi Tiết
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">Còn lại</h2>
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-8">
+                    <div class="countdown-timer row">
+                        <div class="col-3">
+                            <div class="countdown-item">
+                                <span id="countdown-days" class="countdown-number">00</span>
+                                <span class="countdown-label">Ngày</span>
                             </div>
                         </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://www.instagram.com/lehieuit" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-                                </a>
+                        <div class="col-3">
+                            <div class="countdown-item">
+                                <span id="countdown-hours" class="countdown-number">00</span>
+                                <span class="countdown-label">Giờ</span>
                             </div>
                         </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-tiktok"></i>
-                                    </div>
-                                </a>
+                        <div class="col-3">
+                            <div class="countdown-item">
+                                <span id="countdown-minutes" class="countdown-number">00</span>
+                                <span class="countdown-label">Phút</span>
                             </div>
                         </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-github"></i>
-                                    </div>
-                                </a>
+                        <div class="col-3">
+                            <div class="countdown-item">
+                                <span id="countdown-seconds" class="countdown-number">00</span>
+                                <span class="countdown-label">Giây</span>
                             </div>
                         </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-youtube" style="color: red;"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" target="_blank" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="https://hieuitcz.github.io" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-google" style="color: red;"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col col-lg-3 mt-10">
-                            <div class="card__item">
-                                <a href="#" class="card__link">
-                                    <div class="link__icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="toggle toggle__back">
-                    <a href="https://hieuitcz.github.io"><i class="fas fa-arrow-left"></i></a>
-                </div>
-                <div class="toggle toggle__theme">
-                    <i class="fas fa-moon"></i>
-                </div>
-                <div class="button__list mt-10">
-                    <div class="row">
-                        <div class="col col-lg-6 mt-10">
-                            <a href="https://m.me/lehieuit" target="_blank">
-                                <div class="button button__message ">
-                                    <span> Nhắn Tin </span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col col-lg-6 mt-10">
-                            <a href="https://www.facebook.com/lehieuit" target="_blank">
-                                <div class="button button__subscribe ">
-                                    <span> Theo Dõi </span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__footer mt-10">
-                    <div class="footer__item">
-                        <span>
-                            <i class="fas fa-heart"></i>
-                            555.5K
-                        </span>
-                    </div>
-                    <div class="footer__item">
-                        <span>
-                            <i class="fa fa-comment"></i>
-                            165.7K
-                        </span>
-                    </div>
-                    <div class="footer__item">
-                        <span>
-                            <i class="fa fa-share"></i>
-                            333.3K
-                        </span>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="./script.js"></script>
-    </body>
+    </section>
+
+    <!-- Couple Info Section -->
+    <section class="couple-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <img src="assets/img/couple-photo.jpg" alt="Couple Photo" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h2 class="mb-4">Câu Chuyện Tình Yêu</h2>
+                    <p class="lead mb-4" id="love-story">
+                        Câu chuyện tình yêu của chúng tôi bắt đầu từ những ngày tháng đẹp nhất...
+                    </p>
+                    <div class="couple-details">
+                        <div class="bride-info mb-3">
+                            <h5><i class="fas fa-female text-pink me-2"></i><span data-bride-name>Cô Dâu</span></h5>
+                            <p class="text-muted mb-1">Con gái của <span id="bride-parents">Ông bà...</span></p>
+                        </div>
+                        <div class="groom-info">
+                            <h5><i class="fas fa-male text-blue me-2"></i><span data-groom-name>Chú Rể</span></h5>
+                            <p class="text-muted mb-1">Con trai của <span id="groom-parents">Ông bà...</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section id="event-details" class="event-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Thông Tin Sự Kiện</h2>
+            <div class="row">
+                <!-- Lễ Cưới -->
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="event-card text-center p-4 bg-white rounded-3 shadow">
+                        <div class="event-icon mb-3">
+                            <i class="fas fa-church fa-3x text-primary"></i>
+                        </div>
+                        <h4>Lễ Cưới</h4>
+                        <p class="mb-2"><i class="fas fa-clock me-2"></i><span id="ceremony-time">Thời gian</span></p>
+                        <p class="mb-2"><i class="fas fa-calendar me-2"></i><span data-wedding-date>Ngày cưới</span></p>
+                        <p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i><span id="ceremony-venue">Địa điểm</span></p>
+                        <button class="btn btn-outline-primary" onclick="openMap('ceremony')">
+                            <i class="fas fa-directions me-2"></i>Chỉ Đường
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tiệc Cưới -->
+                <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="event-card text-center p-4 bg-white rounded-3 shadow">
+                        <div class="event-icon mb-3">
+                            <i class="fas fa-glass-cheers fa-3x text-success"></i>
+                        </div>
+                        <h4>Tiệc Cưới</h4>
+                        <p class="mb-2"><i class="fas fa-clock me-2"></i><span id="reception-time">Thời gian</span></p>
+                        <p class="mb-2"><i class="fas fa-calendar me-2"></i><span data-wedding-date>Ngày cưới</span></p>
+                        <p class="mb-3"><i class="fas fa-map-marker-alt me-2"></i><span id="reception-venue">Địa điểm</span></p>
+                        <button class="btn btn-outline-success" onclick="openMap('reception')">
+                            <i class="fas fa-directions me-2"></i>Chỉ Đường
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dress Code & Special Instructions -->
+            <div class="row mt-4">
+                <div class="col-md-12" data-aos="fade-up">
+                    <div class="info-card p-4 bg-white rounded-3 shadow">
+                        <h5><i class="fas fa-tshirt me-2 text-warning"></i>Dress Code</h5>
+                        <p id="dress-code" class="mb-3">Trang phục lịch sự</p>
+                        
+                        <h5><i class="fas fa-info-circle me-2 text-info"></i>Lưu Ý Đặc Biệt</h5>
+                        <p id="special-instructions" class="mb-0">Các thông tin đặc biệt sẽ được cập nhật tại đây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section class="rsvp-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="rsvp-card p-5 bg-white rounded-3 shadow" data-aos="fade-up">
+                        <h2 class="text-center mb-4">
+                            <i class="fas fa-reply me-2 text-primary"></i>
+                            Xác Nhận Tham Dự
+                        </h2>
+                        
+                        <form id="rsvp-form">
+                            <div class="mb-3">
+                                <label for="guest-name" class="form-label">Tên Khách Mời *</label>
+                                <input type="text" class="form-control" id="guest-name" name="guest-name" required readonly>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Bạn có thể tham dự không? *</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="attending" id="attending-yes" value="Yes" required>
+                                    <label class="form-check-label" for="attending-yes">
+                                        <i class="fas fa-check text-success me-1"></i>Có, tôi sẽ tham dự
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="attending" id="attending-no" value="No" required>
+                                    <label class="form-check-label" for="attending-no">
+                                        <i class="fas fa-times text-danger me-1"></i>Rất tiếc, tôi không thể tham dự
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="attendance-details" style="display: none;">
+                                <div class="mb-3">
+                                    <label for="guest-count" class="form-label">Số người tham dự</label>
+                                    <select class="form-select" id="guest-count" name="guest-count">
+                                        <option value="1">1 người</option>
+                                        <option value="2">2 người</option>
+                                        <option value="3">3 người</option>
+                                        <option value="4">4 người</option>
+                                        <option value="5">5+ người</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="meal-preference" class="form-label">Sở thích ăn uống</label>
+                                    <select class="form-select" id="meal-preference" name="meal-preference">
+                                        <option value="">Không có yêu cầu đặc biệt</option>
+                                        <option value="vegetarian">Chay</option>
+                                        <option value="halal">Halal</option>
+                                        <option value="no-seafood">Không hải sản</option>
+                                        <option value="other">Khác (ghi chú bên dưới)</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label">Tham dự sự kiện nào?</label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="attending-ceremony" id="attending-ceremony" checked>
+                                        <label class="form-check-label" for="attending-ceremony">
+                                            Lễ Cưới
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" name="attending-reception" id="attending-reception" checked>
+                                        <label class="form-check-label" for="attending-reception">
+                                            Tiệc Cưới
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="special-requests" class="form-label">Ghi chú đặc biệt</label>
+                                <textarea class="form-control" id="special-requests" name="special-requests" rows="3" placeholder="Yêu cầu đặc biệt, chế độ ăn kiêng, khuyết tật cần hỗ trợ..."></textarea>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Gửi Xác Nhận
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="rsvp-success" class="alert alert-success text-center mt-4" style="display: none;">
+                            <i class="fas fa-check-circle fa-2x mb-2"></i>
+                            <h5>Cảm ơn bạn đã xác nhận!</h5>
+                            <p class="mb-0">Chúng tôi đã nhận được phản hồi của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Khoảnh Khắc Đẹp</h2>
+            <div class="row" id="photo-gallery">
+                <!-- Photos will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section class="wishes-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Lời Chúc Mừng</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <!-- Wish Form -->
+                    <div class="wish-form p-4 bg-light rounded-3 mb-4" data-aos="fade-up">
+                        <form id="wish-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Tên của bạn" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Lời chúc của bạn..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-heart me-2"></i>Gửi Lời Chúc
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Wishes Display -->
+                    <div id="wishes-container">
+                        <!-- Wishes will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-2">
+                <span data-bride-name>Cô Dâu</span> & <span data-groom-name>Chú Rể</span>
+            </p>
+            <p class="mb-0 text-muted">
+                <span data-wedding-date>Wedding Date</span> | 
+                <a href="/admin" class="text-muted">Admin</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="assets/js/excel-handler.js"></script>
+    <script src="assets/js/wedding.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
 </html>
