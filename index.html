@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - IPA Repository</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 900px;
+            width: 100%;
+            padding: 30px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+        }
+        button:active {
+            transform: translateY(0);
+        }
+        .video-container {
+            margin-top: 30px;
+            display: none;
+        }
+        video {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .error {
+            color: #e74c3c;
+            text-align: center;
+            margin-top: 15px;
+            display: none;
+        }
+        .info {
+            background: #f0f4ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #667eea;
+        }
+        .info p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .info strong {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎬 Video Player</h1>
+        
+        <div class="input-group">
+            <label for="videoUrl">📎 Paste link video từ GitHub Release:</label>
+            <input 
+                type="text" 
+                id="videoUrl" 
+                placeholder="https://github.com/hieuitcz/ipa/releases/download/tag/video.mp4"
+            >
+        </div>
+        
+        <button onclick="loadVideo()">▶️ Xem Video</button>
+        
+        <div class="error" id="error">
+            ❌ Link không hợp lệ. Vui lòng paste link video từ GitHub Release.
+        </div>
+        
+        <div class="video-container" id="videoContainer">
+            <video id="videoPlayer" controls controlsList="nodownload">
+                <source id="videoSource" type="video/mp4">
+                Trình duyệt của bạn không hỗ trợ video.
+            </video>
+        </div>
+        
+        <div class="info">
+            <p><strong>💡 Hướng dẫn:</strong></p>
+            <p>1. Copy link video từ GitHub Release (link có dạng .mp4)</p>
+            <p>2. Paste vào ô bên trên</p>
+            <p>3. Click "Xem Video" để phát</p>
+            <p><br><strong>Ví dụ link:</strong><br>
+            <code style="font-size: 12px; background: white; padding: 5px; border-radius: 4px; display: inline-block; margin-top: 5px;">
+                https://github.com/hieuitcz/ipa/releases/download/capcut-pro-v6/1470371560744879.mp4
+            </code></p>
+        </div>
+    </div>
+
+    <script>
+        function loadVideo() {
+            const urlInput = document.getElementById('videoUrl');
+            const videoContainer = document.getElementById('videoContainer');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const videoSource = document.getElementById('videoSource');
+            const error = document.getElementById('error');
+            
+            const url = urlInput.value.trim();
+            
+            // Validate URL
+            if (!url || !url.includes('github.com') || !url.includes('/releases/download/')) {
+                error.style.display = 'block';
+                videoContainer.style.display = 'none';
+                return;
+            }
+            
+            // Hide error, show video
+            error.style.display = 'none';
+            videoContainer.style.display = 'block';
+            
+            // Set video source
+            videoSource.src = url;
+            videoPlayer.load();
+            videoPlayer.play();
+            
+            // Scroll to video
+            videoContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        
+        // Auto-load if URL parameter exists
+        window.addEventListener('load', function() {
+            const params = new URLSearchParams(window.location.search);
+            const videoUrl = params.get('v');
+            if (videoUrl) {
+                document.getElementById('videoUrl').value = videoUrl;
+                loadVideo();
+            }
+        });
+        
+        // Allow Enter key to load video
+        document.getElementById('videoUrl').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                loadVideo();
+            }
+        });
+    </script>
+</body>
+</html>
