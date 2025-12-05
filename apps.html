@@ -87,6 +87,12 @@
       color: var(--fg2);
     }
 
+    .ipa-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
     .ipa-download {
       padding: 10px 14px;
       background: var(--accent);
@@ -95,10 +101,27 @@
       color: #fff;
       font-size: 0.9rem;
       text-decoration: none;
+      text-align: center;
+      cursor: pointer;
     }
 
     .ipa-download:hover {
       background: #0066d6;
+    }
+
+    .ipa-copy {
+      padding: 8px 12px;
+      background: transparent;
+      border-radius: var(--r);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.8rem;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .ipa-copy:hover {
+      background: rgba(0, 122, 255, 0.1);
     }
 
     #custom-modal {
@@ -130,7 +153,7 @@
       background: #000;
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 16px;
-      padding: 16px 20px;
+      padding: 16px 20px 16px;
       width: calc(100% - 32px);
       max-width: 340px;
       max-height: calc(100dvh - 60px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
@@ -197,7 +220,7 @@
     }
 
     .modal-fade-bottom {
-      bottom: 56px;
+      bottom: 64px;
       height: 36px;
       background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     }
@@ -255,6 +278,12 @@
       border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
+    .modal-footer {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
     .modal-button {
       text-decoration: none;
       display: block;
@@ -275,6 +304,23 @@
     .modal-button:hover {
       background: #0066d6;
     }
+
+    .modal-copy {
+      padding: 12px 0;
+      border-radius: 12px;
+      border: 1px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      width: 120px;
+      flex-shrink: 0;
+    }
+
+    .modal-copy:hover {
+      background: rgba(0, 122, 255, 0.1);
+    }
   </style>
 </head>
 
@@ -290,7 +336,11 @@
 
       <button class="modal-close" onclick="hideModal()">×</button>
       <div id="modal-content" class="modal-scroll"></div>
-      <a id="modal-action" class="modal-button" download>Download</a>
+
+      <div class="modal-footer">
+        <a id="modal-action" class="modal-button" download>Download</a>
+        <button id="modal-copy" class="modal-copy">Copy link</button>
+      </div>
     </div>
   </div>
 
@@ -301,6 +351,8 @@
     const modalContent = document.getElementById('modal-content');
     const fadeTop = document.querySelector('.modal-fade-top');
     const fadeBottom = document.querySelector('.modal-fade-bottom');
+    const modalAction = document.getElementById('modal-action');
+    const modalCopyBtn = document.getElementById('modal-copy');
 
     function updateFadeVisibility() {
       const { scrollTop, scrollHeight, clientHeight } = modalContent;
@@ -309,6 +361,36 @@
     }
 
     modalContent.addEventListener('scroll', updateFadeVisibility);
+
+    async function copyToClipboard(text, button) {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) { // [web:1][web:2][web:26]
+          await navigator.clipboard.writeText(text); // [web:1][web:2][web:26]
+        } else {
+          const tempInput = document.createElement('textarea'); // [web:2][web:11][web:23]
+          tempInput.value = text;
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          document.body.appendChild(tempInput);
+          tempInput.focus();
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+        }
+        if (button) {
+          const original = button.textContent;
+          button.textContent = 'Copied';
+          button.disabled = true;
+          setTimeout(() => {
+            button.textContent = original;
+            button.disabled = false;
+          }, 1500);
+        }
+      } catch (err) {
+        console.error('Failed to copy: ', err); // [web:23][web:21]
+        alert('Cannot copy link, please copy manually.');
+      }
+    }
 
     function showAppModal(app) {
       const v = app.versions[0];
@@ -329,7 +411,12 @@
       const shotsEl = modalContent.querySelector('.modal-shots');
       if (shotsEl) shotsEl.scrollLeft = 0;
 
-      document.getElementById('modal-action').href = v.downloadURL;
+      modalAction.href = v.downloadURL;
+      modalCopyBtn.onclick = (e) => {
+        e.stopPropagation();
+        copyToClipboard(v.downloadURL, modalCopyBtn);
+      };
+
       document.getElementById('custom-modal').classList.add('show');
 
       requestAnimationFrame(() => {
@@ -362,10 +449,21 @@
             <p class="ipa-meta">v${v.version} • ${fmtSize(v.size)}</p>
             <p class="ipa-date">${formatDate(v.date)}</p>
           </div>
-          <a class="ipa-download" href="${v.downloadURL}" download>Download</a>
+          <div class="ipa-actions">
+            <a class="ipa-download" href="${v.downloadURL}" download>Download</a>
+            <button class="ipa-copy">Copy link</button>
+          </div>
         `;
+
         cell.querySelector('img').onclick =
           cell.querySelector('.ipa-info').onclick = () => showAppModal(app);
+
+        const copyBtn = cell.querySelector('.ipa-copy');
+        copyBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          copyToClipboard(v.downloadURL, copyBtn);
+        });
+
         list.appendChild(cell);
       });
     }
