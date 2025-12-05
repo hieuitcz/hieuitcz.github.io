@@ -307,20 +307,24 @@
     }
 
     .modal-copy {
+      text-decoration: none;
+      display: block;
+      width: 100%;
       padding: 12px 0;
+      background: var(--accent);
+      border: none;
       border-radius: 12px;
-      border: 1px solid var(--accent);
-      background: transparent;
-      color: var(--accent);
-      font-size: 0.9rem;
+      font-size: 1rem;
       font-weight: 500;
+      color: #fff;
+      text-align: center;
       cursor: pointer;
-      width: 120px;
-      flex-shrink: 0;
+      position: relative;
+      z-index: 3;
     }
 
     .modal-copy:hover {
-      background: rgba(0, 122, 255, 0.1);
+      background: #0066d6;
     }
   </style>
 </head>
