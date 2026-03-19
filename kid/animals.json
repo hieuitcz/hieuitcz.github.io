@@ -1,0 +1,93 @@
+[
+  {
+    "id": "cat",
+    "name_cz": "Kočka",
+    "name_en": "Cat",
+    "image": "images/cat.png",
+    "sound": "sounds/cat.wav"
+  },
+  {
+    "id": "monkey",
+    "name_cz": "Opice",
+    "name_en": "Monkey",
+    "image": "images/monkey.png",
+    "sound": "sounds/monkey.wav"
+  },
+  {
+    "id": "tiger",
+    "name_cz": "Tygr",
+    "name_en": "Tiger",
+    "image": "images/tiger.png",
+    "sound": "sounds/tiger.mp3"
+  },
+  {
+    "id": "elephant",
+    "name_cz": "Slon",
+    "name_en": "Elephant",
+    "image": "images/elephant.png",
+    "sound": "sounds/elephant.mp3"
+  },
+  {
+    "id": "rat",
+    "name_cz": "Krysa",
+    "name_en": "Rat",
+    "image": "images/rat.png",
+    "sound": "sounds/rat.mp3"
+  },
+  {
+    "id": "chicken",
+    "name_cz": "Slepice",
+    "name_en": "Chicken",
+    "image": "images/chicken.png",
+    "sound": "sounds/chicken.mp3"
+  },
+  {
+    "id": "dog",
+    "name_cz": "Pes",
+    "name_en": "Dog",
+    "image": "images/dog.png",
+    "sound": "sounds/dog.wav"
+  },
+  {
+    "id": "duck",
+    "name_cz": "Kachna",
+    "name_en": "Duck",
+    "image": "images/duck.png",
+    "sound": "sounds/duck.mp3"
+  },
+  {
+    "id": "lion",
+    "name_cz": "Lev",
+    "name_en": "Lion",
+    "image": "images/lion.png",
+    "sound": "sounds/lion.mp3"
+  },
+  {
+    "id": "rooster",
+    "name_cz": "Kohout",
+    "name_en": "Rooster",
+    "image": "images/rooster.png",
+    "sound": "sounds/rooster.mp3"
+  },
+  {
+    "id": "pig",
+    "name_cz": "Prase",
+    "name_en": "Pig",
+    "image": "images/pig.png",
+    "sound": "sounds/pig.mp3"
+  },
+  {
+    "id": "horse",
+    "name_cz": "Kůň",
+    "name_en": "Horse",
+    "image": "images/horse.png",
+    "sound": "sounds/horse.wav"
+  },
+  {
+    "id": "cow",
+    "name_cz": "Kráva",
+    "name_en": "Cow",
+    "image": "images/cow.png",
+    "sound": "sounds/cow.wav"
+  }
+]
