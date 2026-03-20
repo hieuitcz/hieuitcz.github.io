@@ -3,91 +3,143 @@
     "id": "cat",
     "name_cz": "Kočka",
     "name_en": "Cat",
+    "name_vi": "Con mèo",
     "image": "images/cat.png",
-    "sound": "sounds/cat.wav"
+    "sound": "sounds/cat.wav",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "monkey",
     "name_cz": "Opice",
     "name_en": "Monkey",
+    "name_vi": "Con khỉ",
     "image": "images/monkey.png",
-    "sound": "sounds/monkey.wav"
+    "sound": "sounds/monkey.wav",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"	
   },
   {
     "id": "tiger",
     "name_cz": "Tygr",
     "name_en": "Tiger",
+    "name_vi": "Con hổ",
     "image": "images/tiger.png",
-    "sound": "sounds/tiger.mp3"
+    "sound": "sounds/tiger.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"	
   },
   {
     "id": "elephant",
     "name_cz": "Slon",
     "name_en": "Elephant",
+    "name_vi": "Con voi",
     "image": "images/elephant.png",
-    "sound": "sounds/elephant.mp3"
+    "sound": "sounds/elephant.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"	
   },
   {
     "id": "rat",
     "name_cz": "Krysa",
     "name_en": "Rat",
+    "name_vi": "Con chuột",
     "image": "images/rat.png",
-    "sound": "sounds/rat.mp3"
+    "sound": "sounds/rat.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "chicken",
     "name_cz": "Slepice",
     "name_en": "Chicken",
+    "name_vi": "Con gà mái",
     "image": "images/chicken.png",
-    "sound": "sounds/chicken.mp3"
+    "sound": "sounds/chicken.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "dog",
     "name_cz": "Pes",
     "name_en": "Dog",
+    "name_vi": "Con chó",
     "image": "images/dog.png",
-    "sound": "sounds/dog.wav"
+    "sound": "sounds/dog.wav",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "duck",
     "name_cz": "Kachna",
     "name_en": "Duck",
+    "name_vi": "Con vịt",
     "image": "images/duck.png",
-    "sound": "sounds/duck.mp3"
+    "sound": "sounds/duck.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "lion",
     "name_cz": "Lev",
     "name_en": "Lion",
+    "name_vi": "Con sư tử",
     "image": "images/lion.png",
-    "sound": "sounds/lion.mp3"
+    "sound": "sounds/lion.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "rooster",
     "name_cz": "Kohout",
     "name_en": "Rooster",
+    "name_vi": "Con gà trống",
     "image": "images/rooster.png",
-    "sound": "sounds/rooster.mp3"
+    "sound": "sounds/rooster.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "pig",
     "name_cz": "Prase",
     "name_en": "Pig",
+    "name_vi": "Con lợn",
     "image": "images/pig.png",
-    "sound": "sounds/pig.mp3"
+    "sound": "sounds/pig.mp3",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "horse",
     "name_cz": "Kůň",
     "name_en": "Horse",
+    "name_vi": "Con ngựa",
     "image": "images/horse.png",
-    "sound": "sounds/horse.wav"
+    "sound": "sounds/horse.wav",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   },
   {
     "id": "cow",
     "name_cz": "Kráva",
     "name_en": "Cow",
+    "name_vi": "Con bò",
     "image": "images/cow.png",
-    "sound": "sounds/cow.wav"
+    "sound": "sounds/cow.wav",
+    "sound_cz": "sounds/kocka.mp3",
+    "sound_en": "sounds/cat_en.mp3",
+    "sound_vi": "sounds/con_meo.mp3"
   }
 ]
