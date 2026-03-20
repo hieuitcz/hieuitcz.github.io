@@ -132,12 +132,23 @@
     "sound_vi": "sounds/con_ngua.mp3"
   },
   {
+    "id": "cow",
+    "name_cz": "Kráva",
+    "name_en": "Cow",
+    "name_vi": "Con bò",
+    "image": "images/cow.png",
+    "sound": "sounds/cow.wav",
+    "sound_cz": "sounds/krava.mp3",
+    "sound_en": "sounds/cow_en.mp3",
+    "sound_vi": "sounds/con_bo.mp3"
+  },
+  {
     "id": "goat",
     "name_cz": "Koza",
     "name_en": "Goat",
     "name_vi": "Con dê",
     "image": "images/goat.png",
-    "sound": "sounds/goat.wav",
+    "sound": "sounds/goat.mp3",
     "sound_cz": "sounds/koza.mp3",
     "sound_en": "sounds/goat_en.mp3",
     "sound_vi": "sounds/con_de.mp3"
@@ -148,7 +159,7 @@
     "name_en": "Giraffe",
     "name_vi": "Hươu cao cổ",
     "image": "images/giraffe.png",
-    "sound": "sounds/giraffe.wav",
+    "sound": "sounds/giraffe.mp3",
     "sound_cz": "sounds/zirafa.mp3",
     "sound_en": "sounds/giraffe_en.mp3",
     "sound_vi": "sounds/huou_cao_co.mp3"
@@ -204,19 +215,30 @@
     "name_vi": "Con Bướm",
     "image": "images/butterfly.png",
     "sound": "sounds/butterfly.wav",
-    "sound_cz": "sounds/motýl.mp3",
+    "sound_cz": "sounds/motyl.mp3",
     "sound_en": "sounds/butterfly_en.mp3",
     "sound_vi": "sounds/con_buom.mp3"
   },
   {
-    "id": "cow",
-    "name_cz": "Kráva",
-    "name_en": "Cow",
-    "name_vi": "Con bò",
-    "image": "images/cow.png",
-    "sound": "sounds/cow.wav",
-    "sound_cz": "sounds/krava.mp3",
-    "sound_en": "sounds/cow_en.mp3",
-    "sound_vi": "sounds/con_bo.mp3"
+    "id": "frog",
+    "name_cz": "žába",
+    "name_en": "Frog",
+    "name_vi": "Con ếch",
+    "image": "images/frog.png",
+    "sound": "sounds/frog.mp3",
+    "sound_cz": "sounds/zaba.mp3",
+    "sound_en": "sounds/frog_en.mp3",
+    "sound_vi": "sounds/con_ech.mp3"
+  },
+  {
+    "id": "wolf",
+    "name_cz": "Vlk",
+    "name_en": "Wolf",
+    "name_vi": "Con chó sói",
+    "image": "images/wolf.png",
+    "sound": "sounds/wolf.mp3",
+    "sound_cz": "sounds/vlk.mp3",
+    "sound_en": "sounds/wolf_en.mp3",
+    "sound_vi": "sounds/con_cho_soi.mp3"
   }
 ]
