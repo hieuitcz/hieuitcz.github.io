@@ -2,7 +2,7 @@
   "name": "Học cùng Bơ",
   "short_name": "Học cùng Bơ",
   "description": "Khám phá thế giới động vật cùng chú bé Bơ",
-  "start_url": "/",
+  "start_url": "https://hieuitcz.github.io/kid/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
