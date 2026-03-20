@@ -424,5 +424,12 @@ document.getElementById("btnVI").onclick = () => setMode("vi");
 loadAnimals();
 document.getElementById("btnSound").classList.add("active");
 </script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js');
+  });
+}
+</script>
 </body>
 </html>
