@@ -170,7 +170,7 @@
     "name_en": "Snake",
     "name_vi": "Con Rắn",
     "image": "images/snake.png",
-    "sound": "sounds/snake.wav",
+    "sound": "sounds/snake.mp3",
     "sound_cz": "sounds/had.mp3",
     "sound_en": "sounds/snake_en.mp3",
     "sound_vi": "sounds/con_ran.mp3"
@@ -181,7 +181,7 @@
     "name_en": "Crocodile",
     "name_vi": "Cá sấu",
     "image": "images/crocodile.png",
-    "sound": "sounds/crocodile.wav",
+    "sound": "sounds/crocodile.mp3",
     "sound_cz": "sounds/krokodýl.mp3",
     "sound_en": "sounds/crocodile_en.mp3",
     "sound_vi": "sounds/ca_sau.mp3"
@@ -192,7 +192,7 @@
     "name_en": "Crab",
     "name_vi": "Con Cua",
     "image": "images/crab.png",
-    "sound": "sounds/crab.wav",
+    "sound": "sounds/crab.mp3",
     "sound_cz": "sounds/krab.mp3",
     "sound_en": "sounds/crab_en.mp3",
     "sound_vi": "sounds/con_cua.mp3"
@@ -203,7 +203,7 @@
     "name_en": "Bee",
     "name_vi": "Con ong",
     "image": "images/bee.png",
-    "sound": "sounds/bee.wav",
+    "sound": "sounds/bee.mp3",
     "sound_cz": "sounds/vcela.mp3",
     "sound_en": "sounds/bee_en.mp3",
     "sound_vi": "sounds/con_ong.mp3"
@@ -214,7 +214,7 @@
     "name_en": "Butterfly",
     "name_vi": "Con Bướm",
     "image": "images/butterfly.png",
-    "sound": "sounds/butterfly.wav",
+    "sound": "sounds/butterfly.mp3",
     "sound_cz": "sounds/motyl.mp3",
     "sound_en": "sounds/butterfly_en.mp3",
     "sound_vi": "sounds/con_buom.mp3"
