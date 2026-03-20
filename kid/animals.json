@@ -132,6 +132,83 @@
     "sound_vi": "sounds/con_ngua.mp3"
   },
   {
+    "id": "goat",
+    "name_cz": "Koza",
+    "name_en": "Goat",
+    "name_vi": "Con dê",
+    "image": "images/goat.png",
+    "sound": "sounds/goat.wav",
+    "sound_cz": "sounds/koza.mp3",
+    "sound_en": "sounds/goat_en.mp3",
+    "sound_vi": "sounds/con_de.mp3"
+  },
+  {
+    "id": "giraffe",
+    "name_cz": "žirafa",
+    "name_en": "Giraffe",
+    "name_vi": "Hươu cao cổ",
+    "image": "images/giraffe.png",
+    "sound": "sounds/giraffe.wav",
+    "sound_cz": "sounds/zirafa.mp3",
+    "sound_en": "sounds/giraffe_en.mp3",
+    "sound_vi": "sounds/huou_cao_co.mp3"
+  },
+  {
+    "id": "snake",
+    "name_cz": "Had",
+    "name_en": "Snake",
+    "name_vi": "Con Rắn",
+    "image": "images/snake.png",
+    "sound": "sounds/snake.wav",
+    "sound_cz": "sounds/had.mp3",
+    "sound_en": "sounds/snake_en.mp3",
+    "sound_vi": "sounds/con_ran.mp3"
+  },
+  {
+    "id": "crocodile",
+    "name_cz": "Krokodýl",
+    "name_en": "Crocodile",
+    "name_vi": "Cá sấu",
+    "image": "images/crocodile.png",
+    "sound": "sounds/crocodile.wav",
+    "sound_cz": "sounds/krokodýl.mp3",
+    "sound_en": "sounds/crocodile_en.mp3",
+    "sound_vi": "sounds/ca_sau.mp3"
+  },
+  {
+    "id": "crab",
+    "name_cz": "Krab",
+    "name_en": "Crab",
+    "name_vi": "Con Cua",
+    "image": "images/crab.png",
+    "sound": "sounds/crab.wav",
+    "sound_cz": "sounds/krab.mp3",
+    "sound_en": "sounds/crab_en.mp3",
+    "sound_vi": "sounds/con_cua.mp3"
+  },
+  {
+    "id": "bee",
+    "name_cz": "Včela",
+    "name_en": "Bee",
+    "name_vi": "Con ong",
+    "image": "images/bee.png",
+    "sound": "sounds/bee.wav",
+    "sound_cz": "sounds/vcela.mp3",
+    "sound_en": "sounds/bee_en.mp3",
+    "sound_vi": "sounds/con_ong.mp3"
+  },
+  {
+    "id": "butterfly",
+    "name_cz": "Motýl",
+    "name_en": "Butterfly",
+    "name_vi": "Con Bướm",
+    "image": "images/butterfly.png",
+    "sound": "sounds/butterfly.wav",
+    "sound_cz": "sounds/motýl.mp3",
+    "sound_en": "sounds/butterfly_en.mp3",
+    "sound_vi": "sounds/con_buom.mp3"
+  },
+  {
     "id": "cow",
     "name_cz": "Kráva",
     "name_en": "Cow",
