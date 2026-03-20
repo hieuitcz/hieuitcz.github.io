@@ -17,7 +17,7 @@
     "name_vi": "Con khỉ",
     "image": "images/monkey.png",
     "sound": "sounds/monkey.wav",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/opice.mp3",
     "sound_en": "sounds/monkey_en.mp3",
     "sound_vi": "sounds/con_khi.mp3"	
   },
@@ -28,7 +28,7 @@
     "name_vi": "Con hổ",
     "image": "images/tiger.png",
     "sound": "sounds/tiger.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/tygr.mp3",
     "sound_en": "sounds/tiger_en.mp3",
     "sound_vi": "sounds/con_ho.mp3"	
   },
@@ -39,7 +39,7 @@
     "name_vi": "Con voi",
     "image": "images/elephant.png",
     "sound": "sounds/elephant.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/slon.mp3",
     "sound_en": "sounds/elephant_en.mp3",
     "sound_vi": "sounds/con_voi.mp3"	
   },
@@ -50,7 +50,7 @@
     "name_vi": "Con chuột",
     "image": "images/rat.png",
     "sound": "sounds/rat.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/krysa.mp3",
     "sound_en": "sounds/rat_en.mp3",
     "sound_vi": "sounds/con_chuot.mp3"
   },
@@ -61,7 +61,7 @@
     "name_vi": "Con gà mái",
     "image": "images/chicken.png",
     "sound": "sounds/chicken.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/slepice.mp3",
     "sound_en": "sounds/chicken_en.mp3",
     "sound_vi": "sounds/con_ga_mai.mp3"
   },
@@ -72,7 +72,7 @@
     "name_vi": "Con chó",
     "image": "images/dog.png",
     "sound": "sounds/dog.wav",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/pes.mp3",
     "sound_en": "sounds/dog_en.mp3",
     "sound_vi": "sounds/con_cho.mp3"
   },
@@ -83,7 +83,7 @@
     "name_vi": "Con vịt",
     "image": "images/duck.png",
     "sound": "sounds/duck.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/kachna.mp3",
     "sound_en": "sounds/duck_en.mp3",
     "sound_vi": "sounds/con_vit.mp3"
   },
@@ -94,7 +94,7 @@
     "name_vi": "Con sư tử",
     "image": "images/lion.png",
     "sound": "sounds/lion.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/lev.mp3",
     "sound_en": "sounds/lion_en.mp3",
     "sound_vi": "sounds/con_su_tu.mp3"
   },
@@ -105,7 +105,7 @@
     "name_vi": "Con gà trống",
     "image": "images/rooster.png",
     "sound": "sounds/rooster.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/kohout.mp3",
     "sound_en": "sounds/rooster_en.mp3",
     "sound_vi": "sounds/con_ga_trong.mp3"
   },
@@ -116,7 +116,7 @@
     "name_vi": "Con lợn",
     "image": "images/pig.png",
     "sound": "sounds/pig.mp3",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/prase.mp3",
     "sound_en": "sounds/pig_en.mp3",
     "sound_vi": "sounds/con_lon.mp3"
   },
@@ -127,7 +127,7 @@
     "name_vi": "Con ngựa",
     "image": "images/horse.png",
     "sound": "sounds/horse.wav",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/kun.mp3",
     "sound_en": "sounds/horse_en.mp3",
     "sound_vi": "sounds/con_ngua.mp3"
   },
@@ -138,7 +138,7 @@
     "name_vi": "Con bò",
     "image": "images/cow.png",
     "sound": "sounds/cow.wav",
-    "sound_cz": "sounds/kocka.mp3",
+    "sound_cz": "sounds/krava.mp3",
     "sound_en": "sounds/cow_en.mp3",
     "sound_vi": "sounds/con_bo.mp3"
   }
