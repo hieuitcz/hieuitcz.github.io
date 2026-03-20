@@ -18,8 +18,8 @@
     "image": "images/monkey.png",
     "sound": "sounds/monkey.wav",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"	
+    "sound_en": "sounds/monkey_en.mp3",
+    "sound_vi": "sounds/con_khi.mp3"	
   },
   {
     "id": "tiger",
@@ -29,8 +29,8 @@
     "image": "images/tiger.png",
     "sound": "sounds/tiger.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"	
+    "sound_en": "sounds/tiger_en.mp3",
+    "sound_vi": "sounds/con_ho.mp3"	
   },
   {
     "id": "elephant",
@@ -40,8 +40,8 @@
     "image": "images/elephant.png",
     "sound": "sounds/elephant.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"	
+    "sound_en": "sounds/elephant_en.mp3",
+    "sound_vi": "sounds/con_voi.mp3"	
   },
   {
     "id": "rat",
@@ -51,8 +51,8 @@
     "image": "images/rat.png",
     "sound": "sounds/rat.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/rat_en.mp3",
+    "sound_vi": "sounds/con_chuot.mp3"
   },
   {
     "id": "chicken",
@@ -62,8 +62,8 @@
     "image": "images/chicken.png",
     "sound": "sounds/chicken.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/chicken_en.mp3",
+    "sound_vi": "sounds/con_ga_mai.mp3"
   },
   {
     "id": "dog",
@@ -73,8 +73,8 @@
     "image": "images/dog.png",
     "sound": "sounds/dog.wav",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/dog_en.mp3",
+    "sound_vi": "sounds/con_cho.mp3"
   },
   {
     "id": "duck",
@@ -84,8 +84,8 @@
     "image": "images/duck.png",
     "sound": "sounds/duck.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/duck_en.mp3",
+    "sound_vi": "sounds/con_vit.mp3"
   },
   {
     "id": "lion",
@@ -95,8 +95,8 @@
     "image": "images/lion.png",
     "sound": "sounds/lion.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/lion_en.mp3",
+    "sound_vi": "sounds/con_su_tu.mp3"
   },
   {
     "id": "rooster",
@@ -106,8 +106,8 @@
     "image": "images/rooster.png",
     "sound": "sounds/rooster.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/rooster_en.mp3",
+    "sound_vi": "sounds/con_ga_trong.mp3"
   },
   {
     "id": "pig",
@@ -117,8 +117,8 @@
     "image": "images/pig.png",
     "sound": "sounds/pig.mp3",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/pig_en.mp3",
+    "sound_vi": "sounds/con_lon.mp3"
   },
   {
     "id": "horse",
@@ -128,8 +128,8 @@
     "image": "images/horse.png",
     "sound": "sounds/horse.wav",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/horse_en.mp3",
+    "sound_vi": "sounds/con_ngua.mp3"
   },
   {
     "id": "cow",
@@ -139,7 +139,7 @@
     "image": "images/cow.png",
     "sound": "sounds/cow.wav",
     "sound_cz": "sounds/kocka.mp3",
-    "sound_en": "sounds/cat_en.mp3",
-    "sound_vi": "sounds/con_meo.mp3"
+    "sound_en": "sounds/cow_en.mp3",
+    "sound_vi": "sounds/con_bo.mp3"
   }
 ]
