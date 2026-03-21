@@ -1,5 +1,5 @@
 const CACHE_NAME = 'pwa-cache-v1';
-const urlsToCache = ['/', '/kid', '/kid/index.html', '/kid/hd.txt', '/kid/animals.json'];
+const urlsToCache = ['/kid/hd.txt'];
 
 self.addEventListener('install', event => {
   event.waitUntil(
