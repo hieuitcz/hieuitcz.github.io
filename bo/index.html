@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Học cùng Bơ</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+  <main>
+    <section class="app-screen app-screen--home" id="home-screen" data-visible="true">
+      <header class="hero">
+        <div class="hero__content">
+          <p class="badge badge--hero" id="parent-trigger">Bấm giữ để mở Parent mode</p>
+          <h1>Học cùng Bơ</h1>
+          <p class="subtitle">Chạm để nghe, nhìn để nhớ – cùng bé khám phá thế giới từ vựng đáng yêu.</p>
+          <button class="primary-btn" id="start-learning">Bắt đầu ngay</button>
+        </div>
+        <div class="hero__illustration" aria-hidden="true">
+          <span class="bubble bubble--1">🐻</span>
+          <span class="bubble bubble--2">🎨</span>
+          <span class="bubble bubble--3">🚗</span>
+        </div>
+      </header>
+
+      <section class="topics" id="topics-section">
+        <div class="section-header">
+          <h2>Chủ đề yêu thích</h2>
+          <p>Chạm vào một thẻ để mở lớp học nhỏ của bé.</p>
+        </div>
+        <div class="topics__grid" id="topics-grid"></div>
+      </section>
+    </section>
+
+    <section class="app-screen app-screen--lesson" id="lesson-screen" data-visible="false">
+      <header class="lesson-header">
+        <button class="lesson-back" id="lesson-back" aria-label="Quay lại trang chủ">←</button>
+        <div class="lesson-header__title">
+          <h2 class="lesson-title" id="lesson-title">Chọn một chủ đề</h2>
+        </div>
+        <div class="lesson-header__actions">
+          <div class="mode-switch mode-switch--compact" id="mode-switch" aria-label="Chọn chế độ hiển thị"></div>
+          <button class="quiz-toggle-btn" id="quiz-toggle" aria-expanded="false">Quiz</button>
+        </div>
+      </header>
+
+      <section class="playground" id="playground">
+        <div class="playground__content" id="learning-area">
+          <div class="learning-view" id="learning-view">
+            <section id="item-detail" class="item-detail" aria-live="polite"></section>
+            <div id="selected-topic"></div>
+            <div id="items-grid" aria-live="polite"></div>
+            <div class="player-controls player-controls--mini" id="player-controls"></div>
+          </div>
+          <section class="quiz quiz-view" id="quiz-section" hidden></section>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <div class="parent-overlay" id="parent-overlay" hidden tabindex="-1">
+    <div class="parent-panel" role="dialog" aria-modal="true">
+      <header>
+        <h3>Parent mode</h3>
+        <button id="parent-close">✕</button>
+      </header>
+      <div class="parent-body" id="parent-body"></div>
+    </div>
+  </div>
+
+  <div class="reward-overlay" id="reward-overlay" hidden>
+    <div class="reward-card" id="reward-card" role="dialog" aria-modal="true" aria-label="Phần thưởng đặc biệt">
+      <div class="reward-gift" data-reward-gift>
+        🎁
+      </div>
+      <p class="reward-title">Hộp quà bất ngờ</p>
+      <p class="reward-text">Bé mở được sticker đáng yêu!</p>
+      <button class="reward-open-btn" data-reward-open>Mở quà</button>
+      <div class="reward-pet" data-reward-pet hidden>
+        🐾
+      </div>
+      <button class="reward-close-btn" data-reward-close>Đóng</button>
+    </div>
+  </div>
+
+  <div class="confirm-overlay" id="quiz-confirm" hidden>
+    <div class="confirm-card" role="dialog" aria-modal="true">
+      <p class="confirm-title" data-confirm-title>Thoát sẽ mất điểm</p>
+      <p class="confirm-text" data-confirm-text>Chơi lại từ đầu, bé chắc chắn chứ?</p>
+      <div class="confirm-actions">
+        <button class="confirm-cancel" data-confirm-cancel>Tiếp tục chơi</button>
+        <button class="confirm-accept" data-confirm-accept>Thoát quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
