@@ -1,0 +1,95 @@
+{
+  "topic": "colors",
+  "items": [
+    {
+      "id": "red",
+      "name_vi": "Đỏ",
+      "name_en": "Red",
+      "name_cz": "Červená",
+      "emoji": "🔴",
+      "image": "assets/images/colors/red.svg",
+      "sound": "assets/sounds/colors/red.wav",
+      "color": "#FFD6D6"
+    },
+    {
+      "id": "blue",
+      "name_vi": "Xanh dương",
+      "name_en": "Blue",
+      "name_cz": "Modrá",
+      "emoji": "🔵",
+      "image": "assets/images/colors/blue.svg",
+      "sound": "assets/sounds/colors/blue.wav",
+      "color": "#D8ECFF"
+    },
+    {
+      "id": "yellow",
+      "name_vi": "Vàng",
+      "name_en": "Yellow",
+      "name_cz": "Žlutá",
+      "emoji": "🟡",
+      "image": "assets/images/colors/yellow.svg",
+      "sound": "assets/sounds/colors/yellow.wav",
+      "color": "#FFF5C7"
+    },
+    {
+      "id": "green",
+      "name_vi": "Xanh lá",
+      "name_en": "Green",
+      "name_cz": "Zelená",
+      "emoji": "🟢",
+      "image": "assets/images/colors/green.svg",
+      "sound": "assets/sounds/colors/green.wav",
+      "color": "#E4F8E7"
+    },
+    {
+      "id": "orange",
+      "name_vi": "Cam",
+      "name_en": "Orange",
+      "name_cz": "Oranžová",
+      "emoji": "🟠",
+      "image": "assets/images/colors/orange.svg",
+      "sound": "assets/sounds/colors/orange.wav",
+      "color": "#FFEAD6"
+    },
+    {
+      "id": "purple",
+      "name_vi": "Tím",
+      "name_en": "Purple",
+      "name_cz": "Fialová",
+      "emoji": "🟣",
+      "image": "assets/images/colors/purple.svg",
+      "sound": "assets/sounds/colors/purple.wav",
+      "color": "#F1E4FF"
+    },
+    {
+      "id": "pink",
+      "name_vi": "Hồng",
+      "name_en": "Pink",
+      "name_cz": "Růžová",
+      "emoji": "🌸",
+      "image": "assets/images/colors/pink.svg",
+      "sound": "assets/sounds/colors/pink.wav",
+      "color": "#FFE0F0"
+    },
+    {
+      "id": "brown",
+      "name_vi": "Nâu",
+      "name_en": "Brown",
+      "name_cz": "Hnědá",
+      "emoji": "🟤",
+      "image": "assets/images/colors/brown.svg",
+      "sound": "assets/sounds/colors/brown.wav",
+      "color": "#F3E3D6"
+    },
+    {
+      "id": "black",
+      "name_vi": "Đen",
+      "name_en": "Black",
+      "name_cz": "Černá",
+      "emoji": "⚫",
+      "image": "assets/images/colors/black.svg",
+      "sound": "assets/sounds/colors/black.wav",
+      "color": "#E7E7E7"
+    }
+  ]
+}

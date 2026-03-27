@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VocabularyItem",
+  "type": "object",
+  "required": [
+    "id",
+    "name_vi",
+    "name_en",
+    "name_cz",
+    "image",
+    "sound",
+    "color"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Định danh duy nhất trong phạm vi chủ đề"
+    },
+    "name_vi": {
+      "type": "string",
+      "description": "Tên tiếng Việt của mục"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "Tên tiếng Anh"
+    },
+    "name_cz": {
+      "type": "string",
+      "description": "Tên tiếng Czech"
+    },
+    "image": {
+      "type": "string",
+      "description": "Đường dẫn tới ảnh minh họa"
+    },
+    "sound": {
+      "type": "string",
+      "description": "Đường dẫn file âm thanh hoặc text TTS"
+    },
+    "color": {
+      "type": "string",
+      "description": "Màu nhấn riêng cho item (HEX hoặc gradient)"
+    }
+  },
+  "additionalProperties": false
+}

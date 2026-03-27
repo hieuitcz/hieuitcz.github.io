@@ -1,0 +1,85 @@
+{
+  "topic": "family",
+  "items": [
+    {
+      "id": "mom",
+      "name_vi": "Mẹ",
+      "name_en": "Mom",
+      "name_cz": "Máma",
+      "emoji": "👩",
+      "image": "assets/images/family/mom.svg",
+      "sound": "assets/sounds/family/mom.wav",
+      "color": "#FFE5F0"
+    },
+    {
+      "id": "dad",
+      "name_vi": "Bố",
+      "name_en": "Dad",
+      "name_cz": "Táta",
+      "emoji": "👨",
+      "image": "assets/images/family/dad.svg",
+      "sound": "assets/sounds/family/dad.wav",
+      "color": "#E8F1FF"
+    },
+    {
+      "id": "baby",
+      "name_vi": "Em bé",
+      "name_en": "Baby",
+      "name_cz": "Miminko",
+      "emoji": "👶",
+      "image": "assets/images/family/baby.svg",
+      "sound": "assets/sounds/family/baby.wav",
+      "color": "#FFF6E2"
+    },
+    {
+      "id": "sister",
+      "name_vi": "Chị gái",
+      "name_en": "Sister",
+      "name_cz": "Sestra",
+      "emoji": "👧",
+      "image": "assets/images/family/sister.svg",
+      "sound": "assets/sounds/family/sister.wav",
+      "color": "#FFE6FF"
+    },
+    {
+      "id": "brother",
+      "name_vi": "Anh trai",
+      "name_en": "Brother",
+      "name_cz": "Bratr",
+      "emoji": "👦",
+      "image": "assets/images/family/brother.svg",
+      "sound": "assets/sounds/family/brother.wav",
+      "color": "#E5F6FF"
+    },
+    {
+      "id": "grandma",
+      "name_vi": "Bà",
+      "name_en": "Grandma",
+      "name_cz": "Babička",
+      "emoji": "👵",
+      "image": "assets/images/family/grandma.svg",
+      "sound": "assets/sounds/family/grandma.wav",
+      "color": "#FFF0E1"
+    },
+    {
+      "id": "grandpa",
+      "name_vi": "Ông",
+      "name_en": "Grandpa",
+      "name_cz": "Dědeček",
+      "emoji": "👴",
+      "image": "assets/images/family/grandpa.svg",
+      "sound": "assets/sounds/family/grandpa.wav",
+      "color": "#EAF1FF"
+    },
+    {
+      "id": "baby-sis",
+      "name_vi": "Em gái",
+      "name_en": "Baby sister",
+      "name_cz": "Mladší sestra",
+      "emoji": "👶",
+      "image": "assets/images/family/baby-sis.svg",
+      "sound": "assets/sounds/family/baby-sis.wav",
+      "color": "#FFEFEF"
+    }
+  ]
+}

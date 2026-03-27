@@ -1,0 +1,105 @@
+{
+  "topic": "numbers",
+  "items": [
+    {
+      "id": "one",
+      "name_vi": "Một",
+      "name_en": "One",
+      "name_cz": "Jedna",
+      "emoji": "1️⃣",
+      "image": "assets/images/numbers/1.svg",
+      "sound": "assets/sounds/numbers/1.wav",
+      "color": "#E5F5FF"
+    },
+    {
+      "id": "two",
+      "name_vi": "Hai",
+      "name_en": "Two",
+      "name_cz": "Dva",
+      "emoji": "2️⃣",
+      "image": "assets/images/numbers/2.svg",
+      "sound": "assets/sounds/numbers/2.wav",
+      "color": "#FEE4FF"
+    },
+    {
+      "id": "three",
+      "name_vi": "Ba",
+      "name_en": "Three",
+      "name_cz": "Tři",
+      "emoji": "3️⃣",
+      "image": "assets/images/numbers/3.svg",
+      "sound": "assets/sounds/numbers/3.wav",
+      "color": "#FFF2D6"
+    },
+    {
+      "id": "four",
+      "name_vi": "Bốn",
+      "name_en": "Four",
+      "name_cz": "Čtyři",
+      "emoji": "4️⃣",
+      "image": "assets/images/numbers/4.svg",
+      "sound": "assets/sounds/numbers/4.wav",
+      "color": "#E8FFF1"
+    },
+    {
+      "id": "five",
+      "name_vi": "Năm",
+      "name_en": "Five",
+      "name_cz": "Pět",
+      "emoji": "5️⃣",
+      "image": "assets/images/numbers/5.svg",
+      "sound": "assets/sounds/numbers/5.wav",
+      "color": "#FFF6E1"
+    },
+    {
+      "id": "six",
+      "name_vi": "Sáu",
+      "name_en": "Six",
+      "name_cz": "Šest",
+      "emoji": "6️⃣",
+      "image": "assets/images/numbers/6.svg",
+      "sound": "assets/sounds/numbers/6.wav",
+      "color": "#EAF3FF"
+    },
+    {
+      "id": "seven",
+      "name_vi": "Bảy",
+      "name_en": "Seven",
+      "name_cz": "Sedm",
+      "emoji": "7️⃣",
+      "image": "assets/images/numbers/7.svg",
+      "sound": "assets/sounds/numbers/7.wav",
+      "color": "#FFE8F8"
+    },
+    {
+      "id": "eight",
+      "name_vi": "Tám",
+      "name_en": "Eight",
+      "name_cz": "Osm",
+      "emoji": "8️⃣",
+      "image": "assets/images/numbers/8.svg",
+      "sound": "assets/sounds/numbers/8.wav",
+      "color": "#EAF8FF"
+    },
+    {
+      "id": "nine",
+      "name_vi": "Chín",
+      "name_en": "Nine",
+      "name_cz": "Devět",
+      "emoji": "9️⃣",
+      "image": "assets/images/numbers/9.svg",
+      "sound": "assets/sounds/numbers/9.wav",
+      "color": "#FFEFE2"
+    },
+    {
+      "id": "ten",
+      "name_vi": "Mười",
+      "name_en": "Ten",
+      "name_cz": "Deset",
+      "emoji": "🔟",
+      "image": "assets/images/numbers/10.svg",
+      "sound": "assets/sounds/numbers/10.wav",
+      "color": "#E0F0FF"
+    }
+  ]
+}

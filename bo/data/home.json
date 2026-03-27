@@ -1,0 +1,95 @@
+{
+  "topic": "home",
+  "items": [
+    {
+      "id": "chair",
+      "name_vi": "Ghế",
+      "name_en": "Chair",
+      "name_cz": "Židle",
+      "emoji": "🪑",
+      "image": "assets/images/home/chair.svg",
+      "sound": "assets/sounds/home/chair.wav",
+      "color": "#FFF1E8"
+    },
+    {
+      "id": "table",
+      "name_vi": "Bàn",
+      "name_en": "Table",
+      "name_cz": "Stůl",
+      "emoji": "🍽️",
+      "image": "assets/images/home/table.svg",
+      "sound": "assets/sounds/home/table.wav",
+      "color": "#E8F8FF"
+    },
+    {
+      "id": "lamp",
+      "name_vi": "Đèn",
+      "name_en": "Lamp",
+      "name_cz": "Lampa",
+      "emoji": "💡",
+      "image": "assets/images/home/lamp.svg",
+      "sound": "assets/sounds/home/lamp.wav",
+      "color": "#FFF8D6"
+    },
+    {
+      "id": "bed",
+      "name_vi": "Giường",
+      "name_en": "Bed",
+      "name_cz": "Postel",
+      "emoji": "🛏️",
+      "image": "assets/images/home/bed.svg",
+      "sound": "assets/sounds/home/bed.wav",
+      "color": "#E9F0FF"
+    },
+    {
+      "id": "door",
+      "name_vi": "Cửa",
+      "name_en": "Door",
+      "name_cz": "Dveře",
+      "emoji": "🚪",
+      "image": "assets/images/home/door.svg",
+      "sound": "assets/sounds/home/door.wav",
+      "color": "#FFEAD9"
+    },
+    {
+      "id": "window",
+      "name_vi": "Cửa sổ",
+      "name_en": "Window",
+      "name_cz": "Okno",
+      "emoji": "🪟",
+      "image": "assets/images/home/window.svg",
+      "sound": "assets/sounds/home/window.wav",
+      "color": "#E3F9FF"
+    },
+    {
+      "id": "sofa",
+      "name_vi": "Ghế sofa",
+      "name_en": "Sofa",
+      "name_cz": "Pohovka",
+      "emoji": "🛋️",
+      "image": "assets/images/home/sofa.svg",
+      "sound": "assets/sounds/home/sofa.wav",
+      "color": "#FFE5F9"
+    },
+    {
+      "id": "plant",
+      "name_vi": "Cây",
+      "name_en": "Plant",
+      "name_cz": "Rostlina",
+      "emoji": "🪴",
+      "image": "assets/images/home/plant.svg",
+      "sound": "assets/sounds/home/plant.wav",
+      "color": "#E2FFE9"
+    },
+    {
+      "id": "fridge",
+      "name_vi": "Tủ lạnh",
+      "name_en": "Fridge",
+      "name_cz": "Lednice",
+      "emoji": "🧊",
+      "image": "assets/images/home/fridge.svg",
+      "sound": "assets/sounds/home/fridge.wav",
+      "color": "#E4F5FF"
+    }
+  ]
+}

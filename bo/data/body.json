@@ -1,0 +1,95 @@
+{
+  "topic": "body",
+  "items": [
+    {
+      "id": "hand",
+      "name_vi": "Bàn tay",
+      "name_en": "Hand",
+      "name_cz": "Ruka",
+      "emoji": "🖐️",
+      "image": "assets/images/body/hand.svg",
+      "sound": "assets/sounds/body/hand.wav",
+      "color": "#FFE5FB"
+    },
+    {
+      "id": "eye",
+      "name_vi": "Mắt",
+      "name_en": "Eye",
+      "name_cz": "Oko",
+      "emoji": "👁️",
+      "image": "assets/images/body/eye.svg",
+      "sound": "assets/sounds/body/eye.wav",
+      "color": "#E4F2FF"
+    },
+    {
+      "id": "foot",
+      "name_vi": "Bàn chân",
+      "name_en": "Foot",
+      "name_cz": "Noha",
+      "emoji": "🦶",
+      "image": "assets/images/body/foot.svg",
+      "sound": "assets/sounds/body/foot.wav",
+      "color": "#FFF5DD"
+    },
+    {
+      "id": "ear",
+      "name_vi": "Tai",
+      "name_en": "Ear",
+      "name_cz": "Ucho",
+      "emoji": "👂",
+      "image": "assets/images/body/ear.svg",
+      "sound": "assets/sounds/body/ear.wav",
+      "color": "#FFEFE8"
+    },
+    {
+      "id": "nose",
+      "name_vi": "Mũi",
+      "name_en": "Nose",
+      "name_cz": "Nos",
+      "emoji": "👃",
+      "image": "assets/images/body/nose.svg",
+      "sound": "assets/sounds/body/nose.wav",
+      "color": "#FFF3E0"
+    },
+    {
+      "id": "mouth",
+      "name_vi": "Miệng",
+      "name_en": "Mouth",
+      "name_cz": "Ústa",
+      "emoji": "👄",
+      "image": "assets/images/body/mouth.svg",
+      "sound": "assets/sounds/body/mouth.wav",
+      "color": "#FFE5F5"
+    },
+    {
+      "id": "teeth",
+      "name_vi": "Răng",
+      "name_en": "Teeth",
+      "name_cz": "Zuby",
+      "emoji": "🦷",
+      "image": "assets/images/body/teeth.svg",
+      "sound": "assets/sounds/body/teeth.wav",
+      "color": "#EFF7FF"
+    },
+    {
+      "id": "hair",
+      "name_vi": "Tóc",
+      "name_en": "Hair",
+      "name_cz": "Vlasy",
+      "emoji": "💇",
+      "image": "assets/images/body/hair.svg",
+      "sound": "assets/sounds/body/hair.wav",
+      "color": "#FFF0E6"
+    },
+    {
+      "id": "shoulder",
+      "name_vi": "Vai",
+      "name_en": "Shoulder",
+      "name_cz": "Rameno",
+      "emoji": "🤷",
+      "image": "assets/images/body/shoulder.svg",
+      "sound": "assets/sounds/body/shoulder.wav",
+      "color": "#E9F1FF"
+    }
+  ]
+}

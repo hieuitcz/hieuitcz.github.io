@@ -1,0 +1,95 @@
+{
+  "topic": "food",
+  "items": [
+    {
+      "id": "apple",
+      "name_vi": "Táo",
+      "name_en": "Apple",
+      "name_cz": "Jablko",
+      "emoji": "🍎",
+      "image": "assets/images/food/apple.svg",
+      "sound": "assets/sounds/food/apple.wav",
+      "color": "#FFE8E6"
+    },
+    {
+      "id": "banana",
+      "name_vi": "Chuối",
+      "name_en": "Banana",
+      "name_cz": "Banán",
+      "emoji": "🍌",
+      "image": "assets/images/food/banana.svg",
+      "sound": "assets/sounds/food/banana.wav",
+      "color": "#FFF6D8"
+    },
+    {
+      "id": "milk",
+      "name_vi": "Sữa",
+      "name_en": "Milk",
+      "name_cz": "Mléko",
+      "emoji": "🥛",
+      "image": "assets/images/food/milk.svg",
+      "sound": "assets/sounds/food/milk.wav",
+      "color": "#E5F7FF"
+    },
+    {
+      "id": "orange",
+      "name_vi": "Cam",
+      "name_en": "Orange",
+      "name_cz": "Pomeranč",
+      "emoji": "🍊",
+      "image": "assets/images/food/orange.svg",
+      "sound": "assets/sounds/food/orange.wav",
+      "color": "#FFEFD6"
+    },
+    {
+      "id": "pizza",
+      "name_vi": "Pizza",
+      "name_en": "Pizza",
+      "name_cz": "Pizza",
+      "emoji": "🍕",
+      "image": "assets/images/food/pizza.svg",
+      "sound": "assets/sounds/food/pizza.wav",
+      "color": "#FFE4D6"
+    },
+    {
+      "id": "carrot",
+      "name_vi": "Cà rốt",
+      "name_en": "Carrot",
+      "name_cz": "Mrkev",
+      "emoji": "🥕",
+      "image": "assets/images/food/carrot.svg",
+      "sound": "assets/sounds/food/carrot.wav",
+      "color": "#FFF1D9"
+    },
+    {
+      "id": "bread",
+      "name_vi": "Bánh mì",
+      "name_en": "Bread",
+      "name_cz": "Chléb",
+      "emoji": "🍞",
+      "image": "assets/images/food/bread.svg",
+      "sound": "assets/sounds/food/bread.wav",
+      "color": "#FFF0E0"
+    },
+    {
+      "id": "cake",
+      "name_vi": "Bánh ngọt",
+      "name_en": "Cake",
+      "name_cz": "Dort",
+      "emoji": "🍰",
+      "image": "assets/images/food/cake.svg",
+      "sound": "assets/sounds/food/cake.wav",
+      "color": "#FFE3F5"
+    },
+    {
+      "id": "sushi",
+      "name_vi": "Sushi",
+      "name_en": "Sushi",
+      "name_cz": "Sushi",
+      "emoji": "🍣",
+      "image": "assets/images/food/sushi.svg",
+      "sound": "assets/sounds/food/sushi.wav",
+      "color": "#E3F7FF"
+    }
+  ]
+}

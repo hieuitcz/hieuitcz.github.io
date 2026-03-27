@@ -1,0 +1,76 @@
+{
+  "topics": [
+    {
+      "id": "animals",
+      "title": "Động vật",
+      "description": "Bạn bè nhỏ dễ thương",
+      "icon": "🐾",
+      "color": "#FFE0CC",
+      "dataFile": "animals.json",
+      "itemsCount": 22
+    },
+    {
+      "id": "colors",
+      "title": "Màu sắc",
+      "description": "Cầu vồng lung linh",
+      "icon": "🎨",
+      "color": "#FFE6F5",
+      "dataFile": "colors.json",
+      "itemsCount": 9
+    },
+    {
+      "id": "numbers",
+      "title": "Số đếm",
+      "description": "Đếm cùng Bơ",
+      "icon": "🔢",
+      "color": "#E8F4FF",
+      "dataFile": "numbers.json",
+      "itemsCount": 10
+    },
+    {
+      "id": "vehicles",
+      "title": "Phương tiện",
+      "description": "Vroom vroom!",
+      "icon": "🚗",
+      "color": "#FFF8DD",
+      "dataFile": "vehicles.json",
+      "itemsCount": 9
+    },
+    {
+      "id": "family",
+      "title": "Gia đình",
+      "description": "Những người thân yêu",
+      "icon": "👨‍👩‍👧",
+      "color": "#EAFBF6",
+      "dataFile": "family.json",
+      "itemsCount": 8
+    },
+    {
+      "id": "food",
+      "title": "Đồ ăn",
+      "description": "Măm măm ngon lành",
+      "icon": "🍓",
+      "color": "#FFEFE3",
+      "dataFile": "food.json",
+      "itemsCount": 9
+    },
+    {
+      "id": "body",
+      "title": "Cơ thể",
+      "description": "Khám phá cơ thể",
+      "icon": "🖐️",
+      "color": "#F2E7FF",
+      "dataFile": "body.json",
+      "itemsCount": 9
+    },
+    {
+      "id": "home",
+      "title": "Đồ vật trong nhà",
+      "description": "Vật dụng quen thuộc",
+      "icon": "🏠",
+      "color": "#FFF4F0",
+      "dataFile": "home.json",
+      "itemsCount": 9
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "topic": "vehicles",
+  "items": [
+    {
+      "id": "car",
+      "name_vi": "Xe hơi",
+      "name_en": "Car",
+      "name_cz": "Auto",
+      "emoji": "🚗",
+      "image": "assets/images/vehicles/car.svg",
+      "sound": "assets/sounds/vehicles/car.wav",
+      "color": "#FFF0D0"
+    },
+    {
+      "id": "bus",
+      "name_vi": "Xe buýt",
+      "name_en": "Bus",
+      "name_cz": "Autobus",
+      "emoji": "🚌",
+      "image": "assets/images/vehicles/bus.svg",
+      "sound": "assets/sounds/vehicles/bus.wav",
+      "color": "#FFE4E1"
+    },
+    {
+      "id": "plane",
+      "name_vi": "Máy bay",
+      "name_en": "Plane",
+      "name_cz": "Letadlo",
+      "emoji": "✈️",
+      "image": "assets/images/vehicles/plane.svg",
+      "sound": "assets/sounds/vehicles/plane.wav",
+      "color": "#E3F2FF"
+    },
+    {
+      "id": "taxi",
+      "name_vi": "Taxi",
+      "name_en": "Taxi",
+      "name_cz": "Taxi",
+      "emoji": "🚕",
+      "image": "assets/images/vehicles/taxi.svg",
+      "sound": "assets/sounds/vehicles/taxi.wav",
+      "color": "#FFF6D6"
+    },
+    {
+      "id": "ambulance",
+      "name_vi": "Xe cứu thương",
+      "name_en": "Ambulance",
+      "name_cz": "Sanitka",
+      "emoji": "🚑",
+      "image": "assets/images/vehicles/ambulance.svg",
+      "sound": "assets/sounds/vehicles/ambulance.wav",
+      "color": "#FFE5E7"
+    },
+    {
+      "id": "firetruck",
+      "name_vi": "Xe cứu hỏa",
+      "name_en": "Fire truck",
+      "name_cz": "Hasičské auto",
+      "emoji": "🚒",
+      "image": "assets/images/vehicles/firetruck.svg",
+      "sound": "assets/sounds/vehicles/firetruck.wav",
+      "color": "#FFDCDC"
+    },
+    {
+      "id": "tractor",
+      "name_vi": "Máy cày",
+      "name_en": "Tractor",
+      "name_cz": "Traktor",
+      "emoji": "🚜",
+      "image": "assets/images/vehicles/tractor.svg",
+      "sound": "assets/sounds/vehicles/tractor.wav",
+      "color": "#F0FFE2"
+    },
+    {
+      "id": "bicycle",
+      "name_vi": "Xe đạp",
+      "name_en": "Bicycle",
+      "name_cz": "Kolo",
+      "emoji": "🚲",
+      "image": "assets/images/vehicles/bicycle.svg",
+      "sound": "assets/sounds/vehicles/bicycle.wav",
+      "color": "#E1F8FF"
+    },
+    {
+      "id": "train",
+      "name_vi": "Tàu hỏa",
+      "name_en": "Train",
+      "name_cz": "Vlak",
+      "emoji": "🚂",
+      "image": "assets/images/vehicles/train.svg",
+      "sound": "assets/sounds/vehicles/train.wav",
+      "color": "#F3E8FF"
+    }
+  ]
+}
