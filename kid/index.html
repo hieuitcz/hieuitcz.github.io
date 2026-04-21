@@ -5,262 +5,372 @@
 <meta charset="UTF-8">
 <title>Học cùng Bơ</title>
 <link rel="icon" href="https://raw.githubusercontent.com/hieuitcz/hieuitcz.github.io/main/img/favicon.png" />
-<link rel="manifest" href="/kid/manifest.json">
+<link rel="manifest" href="manifest.json">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
 <style>
+  :root{
+    --bg-1:#fff4cf;
+    --bg-2:#ffd5de;
+    --panel:#fffdf8;
+    --ink:#2d2a26;
+    --accent:#3ba640;
+    --accent-dark:#246e2a;
+    --pill:#ffffffcc;
+    --focus:#ff8a00;
+    --controls-h:58px;
+  }
   *{box-sizing:border-box;margin:0;padding:0}
   body{
-    font-family:"Arial",sans-serif;
-    background:#ffecec;
-    min-height:100vh;
+    font-family:"Baloo 2","Nunito","Trebuchet MS",sans-serif;
+    background:
+      radial-gradient(circle at 18% 22%, #fff7cf 0%, #fff7cf 20%, transparent 48%),
+      radial-gradient(circle at 86% 14%, #ffd6df 0%, #ffd6df 26%, transparent 56%),
+      linear-gradient(135deg,var(--bg-1),var(--bg-2));
+    min-height:100dvh;
     display:flex;
     align-items:center;
     justify-content:center;
+    padding:12px;
+    color:var(--ink);
+    overflow:hidden;
+  }
+  body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.33) 1px, transparent 1px);
+    background-size:18px 18px;
+    opacity:.4;
   }
   .app{
     width:min(950px,100vw);
-    height:min(9500px,100vh);
+    height:min(950px,100dvh);
     position:relative;
     overflow:hidden;
+    border-radius:34px;
+    background:rgba(255,255,255,.58);
+    border:1px solid rgba(255,255,255,.68);
+    box-shadow:0 20px 60px rgba(102,56,35,.18);
+    backdrop-filter:blur(4px);
   }
 
   /* CONTROLS */
   #controls{
-    position:absolute;top:8px;right:8px;z-index:10;
-    display:flex;flex-direction:column;gap:6px;
+    position:absolute;
+    top:12px;
+    right:12px;
+    z-index:20;
+  }
+  .control-row{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex-wrap:wrap;
+    padding:6px;
+    border-radius:999px;
+    background:var(--pill);
+    box-shadow:0 8px 24px rgba(90,57,39,.18);
+    border:1px solid rgba(255,255,255,.75);
   }
   .lang-btn{
-    padding:6px 12px;border-radius:16px;border:none;
-    font-weight:bold;cursor:pointer;
-    box-shadow:0 2px 6px rgba(0,0,0,0.2);
-    background:#ffffff;
+    min-width:44px;
+    height:44px;
+    padding:0 14px;
+    border-radius:999px;
+    border:1px solid rgba(86,57,43,.12);
+    font:700 1rem/1 "Nunito","Trebuchet MS",sans-serif;
+    cursor:pointer;
+    background:#fff;
+    color:#5b3a2b;
+    transition:transform .16s ease, box-shadow .16s ease, background-color .16s ease, color .16s ease;
+    box-shadow:0 2px 8px rgba(77,40,22,.12);
+  }
+  .lang-btn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 6px 14px rgba(77,40,22,.16);
   }
   .lang-btn.active{
-    background:#48b000;color:white;
-    box-shadow:0 4px 12px rgba(72,176,0,0.4);
+    background:linear-gradient(145deg,#54c24d,#37a33a);
+    color:#fff;
+    box-shadow:0 8px 18px rgba(65,150,57,.42);
+    border-color:transparent;
   }
-
+  .lang-btn:focus-visible,
+  .btn:focus-visible,
+  .card-small:focus-visible{
+    outline:3px solid var(--focus);
+    outline-offset:2px;
+  }
 
   /* TRANG CHỦ */
   #screenHome{
-    position:absolute;inset:0;
+    position:absolute;
+    inset:0;
     display:flex;
-    align-items:center;
+    align-items:stretch;
     justify-content:center;
   }
   .home-inner{
-    width:90%;
-    height: auto !important;
-    max-height: 95vh !important;
-    overflow-y: auto !important;
-    padding: 15px 20px 80px !important;
-    margin-top: 30px;
+    width:100%;
+    height:100%;
+    overflow-y:auto;
+    padding:calc(var(--controls-h) + 26px) 22px 90px;
+    scrollbar-gutter:stable;
+  }
+  .home-title{
+    font:700 clamp(1.4rem,3.2vw,2rem)/1.15 "Baloo 2","Nunito",sans-serif;
+    color:#7e3f2a;
+    margin:0 0 14px;
+    letter-spacing:.2px;
+    text-shadow:0 2px 0 rgba(255,255,255,.7);
   }
   .home-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:18px;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:16px;
   }
-  
-  
-  
-  
-  
-@media (max-width: 768px) {
-  .home-inner {
-      /* -height: 85vh !important;- */
-    overflow-y: auto !important;
-    padding: 20px 10px 100px !important;
-  }
-  .home-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 16px !important;
-    min-height: 0 !important;
-  }
-  .card-small {
-    padding: 12px 8px !important;
-  }
-  .card-small img {
-    max-height: 70px !important;
-  }
-  .card-small span {
-    font-size: 1rem !important;
-  }
-    .app{
-    width:min(600px,100vw);
-    height:min(600px,100vh);
-	}
-	.name {
-    font-size: 1.8rem !important;
-	}
-}
-@media (max-width: 480px) {
-  .home-inner {
-    padding: 15px 8px 90px !important;
-  }
-  .home-grid {
-    gap: 12px !important;
-  }
-  .card-small img {
-    max-height: 60px !important;
-  }
-  .card-small span {
-    font-size: 0.95rem !important;
-  }
-    .app{
-    width:min(600px,100vw);
-    height:min(600px,100vh);
-	}
-	.name {
-    font-size: 1.8rem !important;
-	}
-}
-/* FIX LANDSCAPE MOBILE - quay ngang 4 cột */
-@media (max-height: 500px) and (min-width: 600px) {
-  .home-inner {
-    height: auto !important;
-    max-height: 95vh !important;
-    overflow-y: auto !important;
-    padding: 15px 20px 80px !important;
-	margin-top: 30px;
-  }
-  .home-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 12px !important;
-  }
-  .card-small {
-    padding: 10px 6px !important;
-  }
-  .card-small img {
-    max-height: 55px !important;
-  }
-    .app{
-    width:min(600px,100vw);
-    height:min(600px,100vh);
-	}
-	.card-small span {
-    font-size: 0.8rem !important;
-    font-weight: 600;
-    color: #333;
-	}
-	.name {
-    font-size: 1.8rem !important;
-	}
-}
-
-
-
-
-
-
   .card-small{
-    background:#ffffff;
-    border-radius:26px;
-    box-shadow:0 4px 14px rgba(0,0,0,0.12);
-    display:flex;flex-direction:column;
-    align-items:center;justify-content:center;
-    padding:10px;
+    width:100%;
+    border:none;
+    border-radius:24px;
+    background:
+      linear-gradient(#fff,#fff) padding-box,
+      linear-gradient(140deg,#ffd46e,#ffa1b8) border-box;
+    border:2px solid transparent;
+    box-shadow:0 8px 24px rgba(120,68,38,.14);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    min-height:150px;
+    padding:14px 12px;
     cursor:pointer;
-    transition:transform .15s, box-shadow .15s;
+    appearance:none;
+    font-family:inherit;
+    color:inherit;
+    text-align:center;
+    transition:transform .18s ease, box-shadow .18s ease;
+    animation:cardIn .36s ease both;
+    animation-delay:calc(var(--i,0) * 18ms);
   }
   .card-small:hover{
-    transform:translateY(-4px);
-    box-shadow:0 8px 22px rgba(0,0,0,0.18);
+    transform:translateY(-4px) scale(1.01);
+    box-shadow:0 14px 30px rgba(120,68,38,.19);
   }
   .card-small img{
     max-width:90%;
-    max-height:80px;
-    margin-bottom:6px;
+    max-height:86px;
+    margin-bottom:8px;
+    filter:drop-shadow(0 4px 7px rgba(62,39,25,.16));
   }
   .card-small span{
-    font-size:1.1rem;
-    font-weight:600;
-    color:#333;
+    font:700 clamp(1rem,2vw,1.15rem)/1.2 "Nunito","Trebuchet MS",sans-serif;
+    color:#4c372b;
+    text-align:center;
   }
 
   /* NÚT XANH */
   .btn{
     position:absolute;
-    width:78px;height:78px;
+    width:74px;
+    height:74px;
     border-radius:50%;
-    background:#48b000;
-    border:4px solid #2f7c00;
-    box-shadow:0 4px 0 #205400,0 8px 18px rgba(0,0,0,0.25);
+    background:linear-gradient(150deg,#5ac647,#2f9730);
+    border:3px solid #226d29;
+    box-shadow:0 4px 0 #1f5a24,0 12px 24px rgba(28,55,24,.32);
     display:flex;
     align-items:center;
     justify-content:center;
     cursor:pointer;
     z-index:5;
+    transition:transform .15s ease, box-shadow .15s ease;
+    appearance:none;
+    padding:0;
+    font:inherit;
   }
   .btn-inner{
-    width:68%;height:68%;
+    width:68%;
+    height:68%;
     border-radius:50%;
     background:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
   }
-  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 #205400;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn:active{transform:translateY(2px);box-shadow:0 2px 0 #1f5a24;}
   .arrow-left{
-    border-top:16px solid transparent;
-    border-bottom:16px solid transparent;
-    border-right:26px solid #48b000;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-right:24px solid #41a239;
   }
   .arrow-right{
-    border-top:16px solid transparent;
-    border-bottom:16px solid transparent;
-    border-left:26px solid #48b000;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:24px solid #41a239;
   }
   .arrow-up{
-    border-left:16px solid transparent;
-    border-right:16px solid transparent;
-    border-bottom:26px solid #48b000;
+    border-left:15px solid transparent;
+    border-right:15px solid transparent;
+    border-bottom:24px solid #41a239;
   }
 
   /* FLASHCARD */
   #screenFlash{
-    position:absolute;inset:0;
+    position:absolute;
+    inset:0;
     display:none;
   }
   .cloud{
     position:absolute;
-    top:52%;left:50%;
+    top:52%;
+    left:50%;
     transform:translate(-50%,-52%);
-    width:86%;height:82%;
-    background:#fff;
-    border:1px solid #f2f2f2;
-    border-radius:28px;
-    box-shadow:0 2px 12px rgba(0,0,0,0.06);
+    width:88%;
+    height:84%;
+    background:linear-gradient(160deg,#fffefc,#fff8ee);
+    border:1px solid rgba(255,223,176,.8);
+    border-radius:30px;
+    box-shadow:0 12px 36px rgba(118,68,39,.15);
     z-index:1;
   }
   .animal-wrap{
     position:absolute;
-    inset:12% 12% 20% 12%;
-    display:flex;align-items:center;justify-content:center;
-    cursor:pointer;z-index:2;
+    inset:13% 12% 22% 12%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    z-index:2;
   }
   .animal-wrap img{
-    max-width:85%;max-height:100%;
-    transition:transform .15s;
+    max-width:85%;
+    max-height:100%;
+    transition:transform .15s ease;
+    filter:drop-shadow(0 8px 18px rgba(99,57,30,.18));
   }
-  .animal-wrap:active img{transform:scale(1.03);}
+  .animal-wrap:active img{transform:scale(1.04);}
   .name{
-    position:absolute;left:50%;bottom:10%;
+    position:absolute;
+    left:50%;
+    bottom:10%;
     transform:translateX(-50%);
-    font-size:3rem;font-weight:600;color:#444;z-index:3;
+    width:min(78%,760px);
+    text-align:center;
+    font:700 clamp(1.55rem,5.5vw,3rem)/1.15 "Baloo 2","Nunito",sans-serif;
+    color:#4b3427;
+    z-index:3;
+    text-wrap:balance;
   }
 
   #btnPrev{left:3%;bottom:6%;}
   #btnNext{right:3%;bottom:6%;}
   #btnToHome{left:3%;top:6%;}
 
-  .say{animation:pop .25s ease-out;}
+  .say{animation:pop .24s ease-out;}
   @keyframes pop{
     from{transform:scale(1);}
     50%{transform:scale(1.05);}
     to{transform:scale(1);}
   }
+  @keyframes cardIn{
+    from{opacity:0;transform:translateY(6px) scale(.98);}
+    to{opacity:1;transform:translateY(0) scale(1);}
+  }
 
+  @media (max-width: 900px){
+    .app{
+      width:min(100vw,760px);
+      height:min(100dvh,760px);
+      border-radius:28px;
+    }
+    .home-grid{
+      grid-template-columns:repeat(3,minmax(0,1fr));
+    }
+  }
+
+  @media (max-width: 768px){
+    body{padding:6px;}
+    .app{
+      width:100vw;
+      height:100dvh;
+      border-radius:20px;
+    }
+    #controls{
+      top:10px;
+      right:10px;
+    }
+    .home-inner{
+      padding:calc(var(--controls-h) + 22px) 12px 86px;
+    }
+    .home-grid{
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+    .card-small{
+      min-height:128px;
+      border-radius:20px;
+      padding:12px 8px;
+    }
+    .card-small img{max-height:68px;}
+    .btn{
+      width:64px;
+      height:64px;
+    }
+    .name{
+      bottom:12%;
+      width:82%;
+    }
+  }
+
+  @media (max-width: 480px){
+    .home-inner{
+      padding:calc(var(--controls-h) + 20px) 10px 80px;
+    }
+    .home-title{
+      margin-bottom:12px;
+    }
+    .card-small{
+      min-height:116px;
+    }
+    .card-small span{
+      font-size:.95rem;
+    }
+  }
+
+  /* FIX LANDSCAPE MOBILE - quay ngang 4 cột */
+  @media (max-height: 500px) and (min-width: 600px){
+    .home-inner{
+      padding:calc(var(--controls-h) + 14px) 16px 74px;
+    }
+    .home-grid{
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:10px;
+    }
+    .card-small{
+      min-height:108px;
+      border-radius:18px;
+      padding:10px 6px;
+    }
+    .card-small img{max-height:54px;}
+    .card-small span{font-size:.84rem;}
+    .name{font-size:clamp(1.2rem,3.8vw,2rem);}
+    .btn{
+      width:58px;
+      height:58px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{
+      animation:none !important;
+      transition:none !important;
+    }
+  }
 </style>
 </head>
 <body>
@@ -268,17 +378,18 @@
 
   <!-- CONTROLS 4 NÚT -->
   <div id="controls">
-    <div style="display:flex;gap:6px;flex-wrap:wrap;">
-      <button id="btnSound" class="lang-btn">🔊</button>
-      <button id="btnCZ" class="lang-btn">CZ</button>
-      <button id="btnEN" class="lang-btn">EN</button>
-      <button id="btnVI" class="lang-btn">VI</button>
+    <div class="control-row">
+      <button type="button" id="btnSound" class="lang-btn" aria-label="Chế độ phát âm thanh">🔊</button>
+      <button type="button" id="btnCZ" class="lang-btn" aria-label="Hiển thị tiếng Séc">CZ</button>
+      <button type="button" id="btnEN" class="lang-btn" aria-label="Hiển thị tiếng Anh">EN</button>
+      <button type="button" id="btnVI" class="lang-btn" aria-label="Hiển thị tiếng Việt">VI</button>
     </div>
   </div>
 
   <!-- TRANG CHỦ -->
   <div id="screenHome">
     <div class="home-inner">
+      <h1 class="home-title">Học cùng Bơ</h1>
       <div class="home-grid" id="homeGrid"></div>
     </div>
   </div>
@@ -286,19 +397,19 @@
   <!-- FLASHCARD -->
   <div id="screenFlash">
     <div class="cloud"></div>
-    <div class="animal-wrap" id="animalWrap">
+    <div class="animal-wrap" id="animalWrap" tabindex="0" role="button" aria-label="Nghe lại âm thanh">
       <img id="animalImg" src="" alt="">
     </div>
     <div class="name" id="animalName"></div>
-    <div class="btn" id="btnPrev">
+    <button type="button" class="btn" id="btnPrev" aria-label="Con vật trước">
       <div class="btn-inner"><div class="arrow-left"></div></div>
-    </div>
-    <div class="btn" id="btnNext">
+    </button>
+    <button type="button" class="btn" id="btnNext" aria-label="Con vật tiếp theo">
       <div class="btn-inner"><div class="arrow-right"></div></div>
-    </div>
-    <div class="btn" id="btnToHome">
+    </button>
+    <button type="button" class="btn" id="btnToHome" aria-label="Về trang chủ">
       <div class="btn-inner"><div class="arrow-up"></div></div>
-    </div>
+    </button>
   </div>
 </div>
 
@@ -308,11 +419,28 @@
 let animals = [];
 let currentIndex = 0;
 let currentMode = "sound";  // sound/cz/en/vi
+const soundAvailability = new Map();
+let playToken = 0;
+
+function showLoadError(message){
+  const homeGrid = document.getElementById("homeGrid");
+  homeGrid.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:#b00020;font-weight:600;padding:24px;">${message}</div>`;
+}
 
 async function loadAnimals(){
-  const res = await fetch('animals.json');
-  animals = await res.json();
-  updateAll();
+  try {
+    const res = await fetch('animals.json');
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    if(!Array.isArray(data) || data.length === 0) {
+      throw new Error("Danh sách động vật rỗng");
+    }
+    animals = data;
+    updateAll();
+  } catch (err) {
+    console.error("Không tải được animals.json", err);
+    showLoadError("Không tải được dữ liệu động vật. Vui lòng thử lại sau.");
+  }
 }
 
 function getName(a) {
@@ -323,9 +451,41 @@ function getName(a) {
   return a.name_en;
 }
 
-function getSound(a) {
-  if (currentMode === "sound") return a.sound;
-  return a[`sound_${currentMode}`];
+function getSoundCandidates(a) {
+  const preferred = currentMode === "sound" ? a.sound : a[`sound_${currentMode}`];
+  const fallback = [a.sound, a.sound_vi, a.sound_en, a.sound_cz];
+  const merged = [preferred, ...fallback];
+  return [...new Set(merged.filter(Boolean))];
+}
+
+function getSpeechLang() {
+  if (currentMode === "cz") return "cs-CZ";
+  if (currentMode === "en") return "en-US";
+  return "vi-VN";
+}
+
+function speakName(a) {
+  if (!("speechSynthesis" in window)) return;
+  const text = getName(a);
+  if(!text) return;
+  window.speechSynthesis.cancel();
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.lang = getSpeechLang();
+  utter.rate = 0.9;
+  window.speechSynthesis.speak(utter);
+}
+
+async function isSoundAvailable(url) {
+  if (soundAvailability.has(url)) return soundAvailability.get(url);
+  try {
+    const res = await fetch(url, { method: "HEAD", cache: "no-store" });
+    const ok = res.ok;
+    soundAvailability.set(url, ok);
+    return ok;
+  } catch {
+    soundAvailability.set(url, false);
+    return false;
+  }
 }
 
 function updateAll(){
@@ -340,11 +500,14 @@ function buildHome(){
   homeGrid.innerHTML = "";
   animals.forEach((a,i)=>{
     const name = getName(a);
-    const div = document.createElement("div");
-    div.className = "card-small";
-    div.innerHTML = `<img src="${a.image}" alt="${name}"><span>${name}</span>`;
-    div.onclick = () => openFlash(i,true);
-    homeGrid.appendChild(div);
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "card-small";
+    card.setAttribute("aria-label", `Mở thẻ ${name}`);
+    card.style.setProperty("--i", i);
+    card.innerHTML = `<img src="${a.image}" alt="${name}"><span>${name}</span>`;
+    card.onclick = () => openFlash(i,true);
+    homeGrid.appendChild(card);
   });
 }
 
@@ -360,16 +523,32 @@ function renderFlash(){
   img.classList.add("say");
 }
 
-function playSound(){
+async function playSound(){
+  if(!animals.length) return;
+  const token = ++playToken;
   const a = animals[currentIndex];
-  const soundUrl = getSound(a);
-  if(!soundUrl) return;
+  const candidates = getSoundCandidates(a);
+  let soundUrl = "";
+  for (const candidate of candidates) {
+    if (await isSoundAvailable(candidate)) {
+      soundUrl = candidate;
+      break;
+    }
+  }
+  if(token !== playToken) return;
+  if(!soundUrl) {
+    speakName(a);
+    return;
+  }
   const audio = document.getElementById("audioEl");
   audio.src = soundUrl;
-  audio.play().catch(()=>{});
+  audio.play().catch(()=>{
+    speakName(a);
+  });
 }
 
 function openFlash(index,play){
+  if(!animals.length) return;
   currentIndex = index;
   document.getElementById("screenHome").style.display = "none";
   document.getElementById("screenFlash").style.display = "block";
@@ -384,11 +563,13 @@ function backToHome(){
 
 // Nút điều hướng
 document.getElementById("btnPrev").onclick = () => {
+  if(!animals.length) return;
   currentIndex = (currentIndex - 1 + animals.length) % animals.length;
   renderFlash();
   playSound();
 };
 document.getElementById("btnNext").onclick = () => {
+  if(!animals.length) return;
   currentIndex = (currentIndex + 1) % animals.length;
   renderFlash();
   playSound();
@@ -397,6 +578,12 @@ document.getElementById("btnToHome").onclick = backToHome;
 
 // Chạm con vật
 document.getElementById("animalWrap").onclick = playSound;
+document.getElementById("animalWrap").addEventListener("keydown", e=>{
+  if(e.key === "Enter" || e.key === " "){
+    e.preventDefault();
+    playSound();
+  }
+});
 
 // Vuốt
 let startX = null;
@@ -414,17 +601,17 @@ document.getElementById("screenFlash").addEventListener("touchend", e=>{
 },{passive:true});
 
 // 4 MODE NÚT
-function setMode(mode) {
+function setMode(mode, buttonId) {
   currentMode = mode;
   document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  event.target.classList.add('active');
+  document.getElementById(buttonId).classList.add('active');
   updateAll();
 }
 
-document.getElementById("btnSound").onclick = () => setMode("sound");
-document.getElementById("btnCZ").onclick = () => setMode("cz");
-document.getElementById("btnEN").onclick = () => setMode("en");
-document.getElementById("btnVI").onclick = () => setMode("vi");
+document.getElementById("btnSound").onclick = () => setMode("sound", "btnSound");
+document.getElementById("btnCZ").onclick = () => setMode("cz", "btnCZ");
+document.getElementById("btnEN").onclick = () => setMode("en", "btnEN");
+document.getElementById("btnVI").onclick = () => setMode("vi", "btnVI");
 
 // Khởi động - mặc định SOUND (name_vi + sound)
 loadAnimals();
@@ -433,7 +620,10 @@ document.getElementById("btnSound").classList.add("active");
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/kid/sw.js');
+    navigator.serviceWorker.register('sw.js', { scope: './' })
+      .catch(err => {
+        console.error("Không đăng ký được Service Worker", err);
+      });
   });
 }
 </script>
