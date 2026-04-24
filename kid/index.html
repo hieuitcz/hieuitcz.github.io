@@ -6,7 +6,10 @@
 <title>Học cùng Bơ</title>
 <link rel="icon" href="https://raw.githubusercontent.com/hieuitcz/hieuitcz.github.io/main/img/favicon.png" />
 <link rel="manifest" href="manifest.json">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&family=Nunito:wght@600;700&display=swap" rel="stylesheet">
@@ -23,6 +26,10 @@
     --controls-h:58px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
+  html, body{
+    touch-action:manipulation;
+    overscroll-behavior:none;
+  }
   body{
     font-family:"Baloo 2","Nunito","Trebuchet MS",sans-serif;
     background:
@@ -421,6 +428,14 @@ let currentIndex = 0;
 let currentMode = "sound";  // sound/cz/en/vi
 const soundAvailability = new Map();
 let playToken = 0;
+
+// Chan thao tac zoom bang pinch/multi-touch de tre khong phong to man hinh.
+["gesturestart", "gesturechange", "gestureend"].forEach(type => {
+  document.addEventListener(type, e => e.preventDefault(), { passive: false });
+});
+document.addEventListener("touchmove", e => {
+  if (e.touches.length > 1) e.preventDefault();
+}, { passive: false });
 
 function showLoadError(message){
   const homeGrid = document.getElementById("homeGrid");

@@ -4,7 +4,8 @@
   "description": "Khám phá thế giới động vật cùng chú bé Bơ",
   "start_url": "./",
   "scope": "./",
-  "display": "standalone",
+  "display": "fullscreen",
+  "orientation": "portrait-primary",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
